@@ -1,0 +1,46 @@
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/309ea2");
+
+  
+@font-face {
+	font-family: 'KGWaystoSayGoodbye';
+	src: url('../fonts/309EA2_0_0.eot');
+	src: url('../fonts/309EA2_0_0.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/309EA2_0_0.woff2') format('woff2'),
+		url('../fonts/309EA2_0_0.woff') format('woff'),
+		url('../fonts/309EA2_0_0.ttf') format('truetype');
+		font-weight: normal;
+    	font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular-webfont.eot');
+    src: url('../fonts/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-regular-webfont.woff') format('woff'),
+         url('../fonts/raleway-regular-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-regular-webfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nimbus_roman_no9_lbold';
+    src: url('../fonts/nimbusromno9l-med-webfont.eot');
+    src: url('../fonts/nimbusromno9l-med-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nimbusromno9l-med-webfont.woff2') format('woff2'),
+         url('../fonts/nimbusromno9l-med-webfont.woff') format('woff'),
+         url('../fonts/nimbusromno9l-med-webfont.ttf') format('truetype'),
+         url('../fonts/nimbusromno9l-med-webfont.svg#nimbus_roman_no9_lbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+

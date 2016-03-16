@@ -1,0 +1,495 @@
+/*!
+ * Start Bootstrap - Stylish Portfolio Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'ralewayregular',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #111;
+    background-color:#fcfcfc;
+}
+
+h1, h2, h3 {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+hr.star-light {
+    border-color: #fff;
+}
+hr.line {
+    padding: 0;
+    border: none;
+    border-top: solid 1px;
+    color:#ddd;
+    text-align: center;
+    max-width: 400px;
+    margin: 34px auto 30px;
+}
+
+hr.line:after {
+    background-color: #fcfcfc;
+    color: #ddd;
+    font-family: FontAwesome;
+    display: inline-block;
+    position: relative;
+    top: -0.8em;
+    font-size: 1.4em;
+    padding: 0 0.55em;
+}
+
+hr.business-line:after {
+    content: "\f187";
+}
+
+hr.house-line:after {
+    content: "\f283";
+}
+
+
+hr.events-line:after {
+    content: "\f000";
+}
+
+hr.lifestyle-line:after {
+    content: "\f072";
+}
+
+hr.property-line:after {
+    content: "\f1ad";
+}
+
+/* Custom Panel Styles */
+
+.row.vborder [class*='col-']:not(:last-child):after {
+  background: #ddd;
+  width: 1px;
+  content: "";
+  display:block;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  min-height: 320px;
+}
+
+.panel {
+  margin-bottom: 20px;
+  background-color: #fcfcfc;
+  border: none;
+  border-radius: 0px;
+  -webkit-box-shadow:none;
+          box-shadow:none;
+}
+
+.panel-body {
+  padding: 15px;
+  line-height: 2em;
+  text-align:justify;
+}
+
+.panel-body ul{
+  text-align:left;
+}
+
+.panel-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.panel-heading h2, .panel-heading h3 {
+  font-family:'nimbus_roman_no9_lbold';
+  color:#555;
+}
+
+
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: inherit;
+}
+
+.panel-default {
+   
+}
+
+.panel-default > .panel-heading {
+  color: #333;
+  background-color: #fcfcfc;
+  border:none;
+}
+
+
+/* Custom Button Styles */
+
+.btn-dark {
+    color: #34a9b4;
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #555;
+}
+
+.btn-light {
+    color: #555;
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #34a9b4;
+}
+
+/* Custom Horizontal Rule */
+
+hr.small {
+    max-width: 100px;
+}
+
+/* Side Menu */
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    margin-right: -250px;
+    overflow-y: auto;
+    background: #bbb;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #555;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #34a9b4;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #34a9b4;
+    font-family: "KGWaystoSayGoodbye";
+    font-size: 23px;
+    position: relative;
+    letter-spacing: 0.04em;
+    top: 10px;
+    float: left;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #999;
+    background: none;
+}
+
+#menu-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.toggle {
+    margin: 5px 5px 0 0;
+}
+
+.divider {
+    height:50px;
+}
+
+#header .lead {
+	color:#34a9b4;
+	text-shadow: none;
+}
+
+.lead {
+	color:#fff;
+	text-shadow: 1px 1px 1px #999;
+}
+
+.fa-quote-left {
+    color: #ddd;
+    padding-right: 5px;
+}
+
+section {
+    height:500px;
+    padding-top:50px;
+    padding-bottom:50px;
+    overflow:auto;
+}
+
+.section-title {
+	font-family:"leitura_displayroman";
+	text-shadow: 1px 1px 1px #999;
+}
+
+.bg-1 {
+	background: url('../img/bg.jpg') no-repeat center center fixed;
+    color:#fff;
+    background-size:cover;
+}
+  
+.bg-2 {
+	background: url('../img/bg-1.jpg') no-repeat top center fixed;
+    color:#fff;
+    background-size:cover;
+}
+
+.bg-3 {
+	background: url('../img/bg-2.jpg') no-repeat bottom center fixed;
+    color:#fff;
+    background-size:cover;
+}
+
+.bg-4 {
+	background: url('../img/bg-3.jpg') no-repeat bottom center fixed;
+    color:#fff;
+    background-size:cover;
+}
+.bg-5 {
+	background: url('../img/bg-4.jpg') no-repeat bottom center fixed;
+    color:#fff;
+    background-size:cover;
+}
+
+/* Header */
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#header{
+  display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#header h1{
+	font-family: "KGWaystoSayGoodbye";
+    color: #555;
+    font-size: 80px;
+    position: relative;
+    top: 50px;
+}
+
+	@-moz-keyframes reveal-banner {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@-webkit-keyframes reveal-banner {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@-ms-keyframes reveal-banner {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@keyframes reveal-banner {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+.brand-heading {
+    -moz-animation: reveal-banner 1s 0.25s ease-in-out;
+	-webkit-animation: reveal-banner 1s 0.25s ease-in-out;
+	-ms-animation: reveal-banner 1s 0.25s ease-in-out;
+	animation: reveal-banner 1s 0.25s ease-in-out;
+	-moz-animation-fill-mode: forwards;
+			-webkit-animation-fill-mode: forwards;
+	-ms-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	opacity:0;
+	margin-top: 50px;
+	
+}
+
+
+/* About */
+
+.about {
+    padding: 50px 0;
+}
+
+/* Services */
+
+.services {
+    padding: 50px 0;
+}
+
+.service-item {
+    margin-bottom: 30px;
+}
+
+/* Callout */
+
+.callout {
+    display: table;
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    background: url(../img/callout.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Portfolio */
+
+.portfolio {
+    padding: 50px 0;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.img-portfolio {
+    margin: 0 auto;
+}
+
+.img-portfolio:hover {
+    opacity: 0.8;
+}
+
+/* Call to Action */
+
+.call-to-action {
+    padding: 50px 0;
+}
+
+.call-to-action .btn {
+    margin: 10px;
+}
+
+/* Map */
+
+.map {
+    height: 500px;
+}
+
+@media(max-width:768px) {
+    .map {
+        height: 75%;
+    }
+}
+
+/* Footer */
+
+#footer {
+	padding: 100px 0;
+    height: 60px;
+    background-color:#bbb;
+    margin-top:50px;
+
+}
+
+#footer a {
+  color:#efefef;
+}
+
+#footer p.logo-sml {
+    color: #777;
+    font-family: "KGWaystoSayGoodbye";
+    font-size: 32px;
+    letter-spacing: 0.04em;
+    position: relative;
+    top: 20px;
+}
+

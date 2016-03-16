@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Ribbon - PA support for individuals and businesses</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <script src="https://use.typekit.net/vky0fsn.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="css/fonts.css" rel="stylesheet" type="text/css">
+	
+	<link rel="shortcut icon" href="img/icons/favicon.ico?v=2" type="image/x-icon">
+	<link rel="icon" href="/img/icons/favicon.ico" type="image/x-icon">
+	
+	<link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/icons/pple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="img/icons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+	<link rel="manifest" href="img/icons//manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="img/icons/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+<script>    /**
+ * Author: Heather Corey
+ * jQuery Simple Parallax Plugin
+ *
+ */
+ 
+(function($) {
+ 
+    $.fn.parallax = function(options) {
+ 
+        var windowHeight = $(window).height();
+ 
+        // Establish default settings
+        var settings = $.extend({
+            speed        : 0.15
+        }, options);
+ 
+        // Iterate over each object in collection
+        return this.each( function() {
+ 
+        	// Save a reference to the element
+        	var $this = $(this);
+ 
+        	// Set up Scroll Handler
+        	$(document).scroll(function(){
+ 
+    		        var scrollTop = $(window).scrollTop();
+            	        var offset = $this.offset().top;
+            	        var height = $this.outerHeight();
+ 
+    		// Check if above or below viewport
+			if (offset + height <= scrollTop || offset >= scrollTop + windowHeight) {
+				return;
+			}
+ 
+			var yBgPosition = Math.round((offset - scrollTop) * settings.speed);
+ 
+                 // Apply the Y Background Position to Set the Parallax Effect
+    			$this.css('background-position', 'center ' + yBgPosition + 'px');
+                
+        	});
+        });
+    }
+}(jQuery));
+
+$('.bg-1,.bg-3').parallax({
+	speed :	0.15
+});
+
+$('.bg-2').parallax({
+	speed :	0.25
+});
+</script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top"  onclick = $("#menu-close").click(); >ribbon</a>
+            </li>
+            <li>
+                <a href="#top" onclick = $("#menu-close").click(); >Home</a>
+            </li>
+            <li>
+                <a href="#about" onclick = $("#menu-close").click(); >About</a>
+            </li>
+            <li>
+                <a href="#services" onclick = $("#menu-close").click(); >Services</a>
+            </li>
+            <li>
+                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    
+    <!--parallax 1 -->
+ 
+<section id="header" class="bg-1">
+     <div class="brand-heading text-center">
+	   <h1>ribbon</h1>
+	   <h3 class="lead">PA support for individuals and businesses</h3>
+	 </div>
+</section>
+<!--/parallax 1-->
+
+<div class="container">
+    <div class="divider"></div>
+    <div class="row vborder">
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                     <h3>Born to Organise</h3>
+                </div>
+                <div class="panel-body">These days a PA is so much more than someone who just types up your letters or arranges meetings. The modern PA is an unflappable multi tasker, a juggler of many balls and the wearer of several hats!</div>
+                <!--<div class="panel-footer text-right"><a href="#" class="btn btn-default">More</a>
+
+                </div>-->
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                     <h3>Your Covered</h3>
+                </div>
+                <div class="panel-body">From project managing a refurbishment to organising a last minute travel itinerary, a polished PA is always thinking one step ahead. Researching, negotiating, managing budgets and of course flawless organisational skills are second nature.</div>
+               
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-default last">
+                <div class="panel-heading">
+                     <h3>Proof in the pudding</h3>
+                </div>
+                <div class="panel-body">With this in mind I set up Ribbon PA to offer my skills to businesses, entrepreneurs and private individuals on a freelance basis. Giving clients the option to use me as and when they need assistance, I offer the flexibility of confidential high level PA support without the commitment of a full time member of staff.</div>
+            </div>
+        </div>
+    </div>
+    <!--/row-->
+    
+</div>
+<!--/container-->
+<div class="divider"></div>
+<!--parallax 1 -->
+<section id="about" class="bg-2">
+    <div class="col-sm-10 col-sm-offset-1 text-center">
+         <!--<h1 class="section-title">About Me</h1>
+           <p class="lead">Need help with your office management<br>...or researching an unusual gift? Even organising a bespoke event.</p>-->
+    </div>
+</section>
+<!--/parallax 2-->
+
+<div class="container">
+  <div class="row">
+                <div class="col-lg-12 text-center">
+				  <div class="panel-heading">
+					  <h2>My Story</h2>
+				  </div>
+				</div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+				   <div class="panel-body">
+					   <p><i class="fa fa-quote-left fa-2x fa-pull-left"></i>I am a freelance PA and project manager with over 18 years experience in advertising and business and lifestyle management. I provide high quality, flexible PA services to businesses and individuals.</p>
+					   <p>Based in West Sussex I support a wide range of clients in London and the South either within their homes and offices or remotely from my own home garden office. I offer a range of services from managing clients’ private lives and their household management to providing professional business support.</p>
+					</div>
+                </div>
+            </div>
+   
+</div>
+<!--/container-->
+<div class="divider"></div>
+<!--parallax 2 -->
+<section id="services" class="bg-3 text-center">
+     <!--<h1 class="section-title">Services</h1>
+           <p class="lead">Need help with your office management<br>...or researching an unusual gift? Even organising a bespoke event.</p>-->
+</section>
+<!--/parallax 2-->
+<div class="divider"></div>
+
+<div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                <div class="panel-heading">
+                    <h2>Business Management</h2>
+                    <hr class="line business-line">
+                </div>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <div class="panel-body">
+                    	<p>Diary coordination Implementing systems and processes HR support Managing exhibitions at trade shows.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="panel-body">
+                    	<p>Attending events on behalf of clients Filing systems Office moves PR support Point of contact for clients</p></div>
+				   </div>
+			   </div>
+            <div class="divider"></div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+				  <div class="panel-heading">
+					  <h2>Events Management</h2>
+					  <hr class="line events-line">
+				  </div>
+				</div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+				  <div class="panel-body">
+					  <p>Full scale management of weddings, parties and celebrations. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.</p>
+				  </div>
+                </div>
+            </div>
+             <div class="divider"></div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                <div class="panel-heading">
+                    <h2>Household Management</h2>
+                    <hr class="line house-line">
+                </div>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <div class="panel-body">
+                    	<p>Recruitment and management of household staff. Paying bills and setting up accounts. Management of contractors and external suppliers</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="panel-body">
+                    	<p>Overseeing and managing repairs and maintenance. Arranging insurances. Running errands.</p></div>
+				   </div>
+			   </div>
+            <div class="divider"></div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+				  <div class="panel-heading">
+					  <h2>Lifestyle Management</h2>
+					  <hr class="line lifestyle-line">
+				  </div>
+				</div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+				  <div class="panel-body">
+					  <p>Researching and booking holidays. Visa applications. Full handling of personal engagements. De-cluttering sessions. Personal shopping including gift buying</p>
+				  </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+				  <div class="panel-heading">
+					  <h2>Property Management</h2>
+					  <hr class="line property-line">
+				  </div>
+				</div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+				  <div class="panel-body">
+					  <p>Holiday let management. Property search. Relocations. Refurbishments. UK / Overseas moves</p>
+				  </div>
+                </div>
+            </div>
+</div>
+
+<div class="divider"></div>
+
+
+<!--/container-->
+<div class="divider"></div>
+
+<!--parallax 3 -->
+<section id="contact" class="bg-4 text-center">
+     <!--<h1 class="section-title">Get in touch</h1>
+    <p class="lead"></p>-->
+</section>
+<!--/parallax 3-->
+<div class="container">
+<div class="divider"></div>
+    
+      <div class="row">
+                <div class="col-lg-12 text-center">
+                <div class="panel-heading">
+                    <h2>Get in touch</h2>
+                    <hr class="line mail-line">
+                </div>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <div class="panel-body">
+                    	<p>Need help with your office management...or researching an unusual gift? Even organising a bespoke event. <a href="mailto:victoria@ribbonpa.co.uk" class="email">Get in touch</a>.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="panel-body">
+                    	<ul class="list-unstyled">
+                	<li>Email me <a href="mailto:victoria@ribbonpa.co.uk" class="email">victoria@ribbonpa.co.uk</a></li>
+                    <li>Call me <a href="tel:+447779583424">+44&nbsp;777&nbsp;958&nbsp;3424</a></li>
+                </ul>
+                </div>
+			</div>
+	</div>
+
+</div>
+<!--/container-->
+<div class="divider"></div>
+
+
+  <!-- Footer -->
+    <footer id="footer">
+ <div class="container text-center">
+         <p class="logo-sml">ribbon</p>
+            <p class="text-muted">© 2015</p>
+
+    </div>
+
+ </footer>
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
+</body>
+
+</html>
