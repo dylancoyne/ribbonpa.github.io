@@ -27,18 +27,17 @@
 }
 
 @font-face {
-    font-family: 'nimbus_roman_no9_lbold';
-    src: url('../fonts/nimbusromno9l-med-webfont.eot');
-    src: url('../fonts/nimbusromno9l-med-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/nimbusromno9l-med-webfont.woff2') format('woff2'),
-         url('../fonts/nimbusromno9l-med-webfont.woff') format('woff'),
-         url('../fonts/nimbusromno9l-med-webfont.ttf') format('truetype'),
-         url('../fonts/nimbusromno9l-med-webfont.svg#nimbus_roman_no9_lbold') format('svg');
+    font-family: 'nimbus_roman_no9_lregular';
+    src: url('../fonts/nimbusromno9l-reg-webfont.eot');
+    src: url('../fonts/nimbusromno9l-reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nimbusromno9l-reg-webfont.woff2') format('woff2'),
+         url('../fonts/nimbusromno9l-reg-webfont.woff') format('woff'),
+         url('../fonts/nimbusromno9l-reg-webfont.ttf') format('truetype'),
+         url('../fonts/nimbusromno9l-reg-webfont.svg#nimbus_roman_no9_lregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
-
 
 
 
