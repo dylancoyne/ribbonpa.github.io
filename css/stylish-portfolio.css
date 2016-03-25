@@ -13,8 +13,8 @@ body {
 }
 
 body {
-    font-family: 'soleil',"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #000;
+    font-family: 'Raleway',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #111;
     background-color:#fcfcfc;
 }
 
@@ -27,6 +27,7 @@ h1, h2, h3 {
 hr.star-light {
     border-color: #fff;
 }
+
 hr.line {
     padding: 0;
     border: none;
@@ -68,10 +69,36 @@ hr.property-line:after {
     content: "\f1ad";
 }
 
+p {
+	font-family:adelle;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
+  	line-height: 2em;
+  	text-align:justify;
+}
+
+blockquote {
+	font-family: ralewayregular;
+	font-size: 21px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 30px;
+}
+pre {
+	font-family: ralewayregular;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 18.5714px;
+}
+
 /* Custom Panel Styles */
 
 .row.vborder [class*='col-']:not(:last-child):after {
-  background: #888;
+  background-color: #aaa;
   width: 1px;
   content: "";
   display:block;
@@ -109,7 +136,7 @@ hr.property-line:after {
 }
 
 .panel-heading h2, .panel-heading h3 {
-  font-family:'nimbus_roman_no9_lregular';
+	font-weight:500;
 }
 
 
@@ -255,13 +282,16 @@ hr.small {
 }
 
 #header .lead {
-	color:#34a9b4;
-	text-shadow: none;
+	color: #34a9b4;
+    text-shadow: none;
+    font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
 }
 
 .lead {
 	color:#fff;
-	text-shadow: 1px 1px 1px #999;
+	text-shadow: 1px 1px 1px #ccc;
 }
 
 .fa-quote-left {
