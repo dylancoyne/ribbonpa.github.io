@@ -31,20 +31,16 @@ hr.star-light {
 hr.line {
     padding: 0;
     border: none;
-    border-top: solid 1px;
     text-align: center;
-    max-width: 400px;
-    margin: 34px auto 30px;
 }
 
 hr.line:after {
-    background-color: #fcfcfc;
-    color: #222;
+    color: #34a9b4;
     font-family: FontAwesome;
     display: inline-block;
     position: relative;
-    top: -0.8em;
-    font-size: 1.4em;
+    top: -1.4em;
+    font-size: 1.5em;
     padding: 0 0.55em;
 }
 
@@ -135,8 +131,9 @@ pre {
   border-top-right-radius: 3px;
 }
 
-.panel-heading h2, .panel-heading h3 {
-	font-weight:500;
+.panel-heading h3 {
+	font-size:20px;
+	margin-bottom:10px;
 }
 
 
@@ -307,8 +304,9 @@ section {
 }
 
 .section-title {
-	font-family:"leitura_displayroman";
-	text-shadow: 1px 1px 1px #999;
+	padding: 0 0 28px;
+    text-transform: uppercase;
+    font-weight: 200;
 }
 
 .bg-1 {
@@ -430,8 +428,14 @@ section {
 
 /* About */
 
-.about {
-    padding: 50px 0;
+
+.about-img img{
+    display: block;
+    margin: 0 auto;
+}
+
+.about-img {
+    margin-top:-126px;
 }
 
 /* Services */
