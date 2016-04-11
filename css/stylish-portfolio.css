@@ -24,53 +24,16 @@ h1, h2, h3 {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-hr.star-light {
-    border-color: #fff;
-}
-
-hr.line {
-    padding: 0;
-    border: none;
-    text-align: center;
-}
-
-hr.line:after {
-    color: #34a9b4;
-    font-family: FontAwesome;
-    display: inline-block;
-    position: relative;
-    top: -1.4em;
-    font-size: 1.5em;
-    padding: 0 0.55em;
-}
-
-hr.business-line:after {
-    content: "\f187";
-}
-
-hr.house-line:after {
-    content: "\f283";
-}
-
-
-hr.events-line:after {
-    content: "\f000";
-}
-
-hr.lifestyle-line:after {
-    content: "\f072";
-}
-
-hr.property-line:after {
-    content: "\f1ad";
-}
+strong {
+	font-weight:bold;
+	}
 
 p {
 	font-family:adelle;
 	font-style: normal;
 	font-variant: normal;
-	font-weight: 300;
-  	line-height: 2em;
+	font-weight: 200;
+	line-height: 1.9em;
   	text-align:justify;
 }
 
@@ -89,69 +52,6 @@ pre {
 	font-variant: normal;
 	font-weight: 400;
 	line-height: 18.5714px;
-}
-
-/* Custom Panel Styles */
-
-.row.vborder [class*='col-']:not(:last-child):after {
-  background-color: #aaa;
-  width: 1px;
-  content: "";
-  display:block;
-  position: absolute;
-  top:0;
-  bottom: 0;
-  right: 0;
-  min-height: 320px;
-}
-
-.panel {
-  margin-bottom: 20px;
-  background-color: #fcfcfc;
-  border: none;
-  border-radius: 0px;
-  -webkit-box-shadow:none;
-          box-shadow:none;
-}
-
-.panel-body {
-  padding: 15px;
-  line-height: 2em;
-  text-align:justify;
-}
-
-.panel-body ul{
-  text-align:left;
-}
-
-.panel-heading {
-  padding: 10px 15px;
-  border-bottom: 1px solid transparent;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-}
-
-.panel-heading h3 {
-	font-size:20px;
-	margin-bottom:10px;
-}
-
-
-.panel-title {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 16px;
-  color: inherit;
-}
-
-.panel-default {
-   
-}
-
-.panel-default > .panel-heading {
-  color: #333;
-  background-color: #fcfcfc;
-  border:none;
 }
 
 
@@ -291,6 +191,14 @@ hr.small {
 	text-shadow: 1px 1px 1px #ccc;
 }
 
+.fa {
+	font-size:22px !important;
+}
+
+.fa:before {
+    margin-right:8px;
+}
+
 .fa-quote-left {
     color: #888;
     padding-right: 5px;
@@ -303,38 +211,52 @@ section {
     overflow:auto;
 }
 
-.section-title {
-	padding: 0 0 28px;
-    text-transform: uppercase;
-    font-weight: 200;
+.section {
+    height:500px;
+    padding-top:50px;
+    padding-bottom:50px;
+    overflow:auto;
 }
+
+.section-title h2{
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	font-size: 3em;
+    line-height: 2.8em;
+    font-weight: 300;
+}
+
+.col-md-4 {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.col-md-4 h4{
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	font-weight: 600;
+}
+
 
 .bg-1 {
 	background: url('../img/bg.jpg') no-repeat center center fixed;
-    color:#fff;
     background-size:cover;
 }
   
 .bg-2 {
 	background: url('../img/bg-1.jpg') no-repeat top center fixed;
-    color:#fff;
     background-size:cover;
 }
 
 .bg-3 {
 	background: url('../img/bg-2.jpg') no-repeat bottom center fixed;
-    color:#fff;
     background-size:cover;
 }
 
 .bg-4 {
 	background: url('../img/bg-3.jpg') no-repeat bottom center fixed;
-    color:#fff;
     background-size:cover;
 }
 .bg-5 {
 	background: url('../img/bg-4.jpg') no-repeat bottom center fixed;
-    color:#fff;
     background-size:cover;
 }
 
@@ -505,11 +427,17 @@ section {
 /* Footer */
 
 #footer {
-	padding: 100px 0;
-    height: 60px;
-    background-color:#bbb;
+	padding: 50px 0;
+    background-color:#eee;
     margin-top:50px;
+    text-align:center;
 
+}
+
+#footer .colophon p{
+    margin:0 auto;
+    text-align:center;
+    color: #666;
 }
 
 #footer a {
@@ -517,7 +445,6 @@ section {
 }
 
 #footer p.logo-sml {
-    color: #777;
     font-family: "KGWaystoSayGoodbye";
     font-size: 32px;
     letter-spacing: 0.04em;
