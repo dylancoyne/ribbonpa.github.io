@@ -49,11 +49,10 @@ p.services-lists {
 
 blockquote {
 	font-size: 21px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
-	line-height: 30px;
-	margin: 36px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+    line-height: 30px;
     padding: 12px 22px;
 }
 pre {
@@ -284,7 +283,7 @@ section .image-overlay {
 #top h1{
 	font-family: "KGWaystoSayGoodbye";
     color: #123639;
-    font-size: 80px;
+    font-size: 70px;
     position: relative;
     top: 50px;
 }
@@ -347,12 +346,13 @@ section .image-overlay {
 
 .brand-header h3 {
 	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 300;
-	color: #34a9b4;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    color: #34a9b4;
     text-shadow: none;
-    margin-bottom:18px;
+    font-size: 21px;
+    margin-top: 28px;
    
 }
 
@@ -363,7 +363,7 @@ section .image-overlay {
 }
 
 .brand-intro {
-	color: #0d0404;
+	color: #f7f7f7;
 	padding:0;
     margin:0;
     -webkit-transition: background .3s ease-in-out;
@@ -374,7 +374,7 @@ section .image-overlay {
 .brand-intro:hover,
 .brand-intro:focus {
     outline: 0;
-    color: #fcfcfc;
+    color: #0d0404;
 }
 
 .brand-intro:hover i.animated{
@@ -403,8 +403,8 @@ section .image-overlay {
     }
 
     50% {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
+        -webkit-transform: scale(1.4);
+        transform: scale(1.4);
     }
 
     100% {
@@ -464,22 +464,28 @@ section .image-overlay {
     -o-background-size: cover;
 }
 
-/* Portfolio */
-
-.portfolio {
-    padding: 50px 0;
+/* Contact */
+.location-text {
+	padding: 12px 44px;
+    line-height: 1.8em;
+    font-size: 16px;
+    font-weight: 300;
+    color: #1c0a08;
+    margin-bottom: 32px;
 }
 
-.portfolio-item {
-    margin-bottom: 30px;
+.contact-icon {
+    margin-bottom: 10px;
+    font-size: 20px;
+    height: 35px;
 }
 
-.img-portfolio {
-    margin: 0 auto;
-}
-
-.img-portfolio:hover {
-    opacity: 0.8;
+.contact-text {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.6em;
+    color: #1c0a08;
 }
 
 /* Call to Action */
