@@ -16,6 +16,7 @@ body {
     font-family: "adelle",serif;
     color: #0d0404;
     background-color:#f7f7f7;
+    font-size:1.25em;
 }
 
 h1, h2, h3, p {
@@ -35,6 +36,15 @@ p {
 	line-height: 2em;
     text-align: justify;
     color: #1c0a08;
+}
+
+p.services-lists {
+	font-family:adelle;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 2em;
+    color: #1c0a08;
+    text-align:left;
 }
 
 blockquote {
@@ -209,13 +219,20 @@ section .image-overlay {
 
 .section-title h2{
 	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 2.6em;
-    line-height: 2.8em;
+	font-size: 3em;
+    line-height: 2.6em;
     font-weight: 300;
 }
 
 .text-panel {
-    margin-bottom: 20px;
+    margin-bottom: 26px;
+}
+
+.fa-circle {
+	font-size: 4px !important;
+    vertical-align: middle;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 .col-md-4 {
@@ -226,7 +243,7 @@ section .image-overlay {
 .col-md-4 h4{
 	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: 600;
-	padding-bottom: 6px;
+	font-size:17px;
 }
 
 
