@@ -52,59 +52,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     
-<script>    /**
- * Author: Heather Corey
- * jQuery Simple Parallax Plugin
- *
- */
- 
-(function($) {
- 
-    $.fn.parallax = function(options) {
- 
-        var windowHeight = $(window).height();
- 
-        // Establish default settings
-        var settings = $.extend({
-            speed        : 0.15
-        }, options);
- 
-        // Iterate over each object in collection
-        return this.each( function() {
- 
-        	// Save a reference to the element
-        	var $this = $(this);
- 
-        	// Set up Scroll Handler
-        	$(document).scroll(function(){
- 
-    		        var scrollTop = $(window).scrollTop();
-            	        var offset = $this.offset().top;
-            	        var height = $this.outerHeight();
- 
-    		// Check if above or below viewport
-			if (offset + height <= scrollTop || offset >= scrollTop + windowHeight) {
-				return;
-			}
- 
-			var yBgPosition = Math.round((offset - scrollTop) * settings.speed);
- 
-                 // Apply the Y Background Position to Set the Parallax Effect
-    			$this.css('background-position', 'center ' + yBgPosition + 'px');
-                
-        	});
-        });
-    }
-}(jQuery));
 
-$('.bg-1,.bg-3').parallax({
-	speed :	0.15
-});
-
-$('.bg-2').parallax({
-	speed :	0.25
-});
-</script>
 </head>
 
 <body>
@@ -156,12 +104,12 @@ $('.bg-2').parallax({
    		 </div>
    		</div>
    		<div class="row">
-        <div class="col-md-4">
+        <div class="text-panel col-md-4">
                             
                      <h4>Lighten your workload</h4>
                
                 <p>Whether you’re running your own business, need helping managing a project or just want to tick off some of the tasks on your ever growing personal admin list, there are times when everyone needs an extra pair of hands. Ribbon is here to offer versatile and efficient freelance personal assistance whenever you need it.</p></div>
-        <div class="col-md-4">
+        <div class="text-panel col-md-4">
             
                
                      <h4>Proactive, professional support</h4>
@@ -169,7 +117,7 @@ $('.bg-2').parallax({
              <p>From project managing a refurbishment to organising a last minute travel itinerary, a polished PA is always thinking one step ahead. Researching, negotiating, managing budgets and of course flawless organisational skills are second nature at Ribbon.</p>
            
         </div>
-        <div class="col-md-4">
+        <div class="text-panel col-md-4">
             
                      <h4>A PA when you need one</h4>
                 
@@ -184,7 +132,7 @@ $('.bg-2').parallax({
 <div class="divider"></div>
 <!--parallax 1 -->
 <section id="about" class="bg-2">
-    <div class="col-sm-10 col-sm-offset-1 text-center">
+     <div class="image-overlay">
          <!--<h1 class="section-title">About Me</h1>
            <p class="lead">Need help with your office management<br>...or researching an unusual gift? Even organising a bespoke event.</p>-->
     </div>
@@ -192,27 +140,22 @@ $('.bg-2').parallax({
 <!--/parallax 2-->
 
 <div class="container">
-            <div class="row">
-            	<div class="col-lg-12 text-center">
-            		<div class="about-img">
-            		<img class="img-responsive" src="img/victoria.png" alt="">
-            		</div>
-				</div>
-        	</div>
-        	
-             <div class="row">
+                     <div class="row">
             	<div class="col-lg-12 text-center">
             <div class="section-title">
 					  <h2>The Ribbon Story</h2>
 				  </div>
+				              		<div class="about-img">
+            		<img class="img-responsive" src="img/victoria.png" alt="">
+            		</div>
 				</div>
 				</div>
-            
+            <div class="divider"></div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
 				  
-					   <p>I was born to organise! I have always been passionate about bringing order to the chaos of life and with a brief stint working in TV production, I moved in to the advertising industry. Managing teams of art directors, copywriters and designers whilst working to tight deadlines is no mean feat but my 10 years in the industry taught me great deal of resilience and the ability to always think outside of the box.</p>
-					   <blockquote>I have spent the last 4 years working with a range of clients, providing responsive personal assistance to high net worth and high profile individuals, entrepreneurs and business owners. If it needs trouble - shooting, managing or organizing, I’m there!</blockquote>
+					   <p>I was born to organise and I have always been passionate about bringing order to the chaos of life. With a brief stint in TV production I moved in to the advertising industry where I worked to tight deadlines and budgets while managing teams of art directors, copy writers and designers. I learnt a great deal of resilience, the ability to think outside of the box and crucially the solid skill set needed to become a successful and accomplished PA. After a few years working for a prominent business and lifestyle management company I decided to set up Ribbon, offering PA support to clients on a freelance basis.</p>
+					   <blockquote>Since 2012 I have been working with a range of clients providing responsive personal assistance to high net worth and high profile individuals, entrepreneurs and business owners. If it needs trouble shooting, managing or organising, I’m there!</blockquote>
 						<p>Over the years I have built up a book of contacts from IT specialists and web designers to connections at several luxury brands. I am part of a network of high end PA’s who share knowledge on trusted suppliers and if I can’t do something then I usually know someone who can.</p>
 						<p>I am registered with the Information Commissioner’s Office under the Data Protection Act and I am happy to sign an NDA provided by a client or supply my own. I have full Professional Indemnity and Public Liability insurance.</p>					
 					
@@ -224,8 +167,11 @@ $('.bg-2').parallax({
 <div class="divider"></div>
 <!--parallax 2 -->
 <section id="services" class="bg-3 text-center">
+ <div class="image-overlay">
+
      <!--<h1 class="section-title">Services</h1>
            <p class="lead">Need help with your office management<br>...or researching an unusual gift? Even organising a bespoke event.</p>-->
+ </div>
 </section>
 <!--/parallax 2-->
 
@@ -239,52 +185,55 @@ $('.bg-2').parallax({
    		 </div>
    		</div>
    <div class="row">
-        <div class="col-md-4 col-sm-6">
-                <h4><span class="services-icons"><i class="fa fa-line-chart"></i></span>Business PA</h4>
-               
-                <p>Diary coordination. Implementing systems and processes. HR support. Managing exhibitions at trade shows.</p>
-                <p>Attending events on behalf of clients. Filing systems. Office relocations. PR support. Website design. Point of contact for clients. IT Support.</p>
-                 
-            </div>
-        
-        <div class="col-md-4 col-sm-6">
-                    <h4><span class="services-icons"><i class="fa fa-birthday-cake"></i></span>Event Management</h4>
-              
-                <p>Full scale management of weddings, parties and celebrations. Liaising with suppliers. Sourcing unusual items. Monitoring budgets.</p></div>
-            
-        
-       <div class="col-md-4 col-sm-6">
+   		  <div class="col-md-4">
+   		  <div class="text-panel">
            <h4><span class="services-icons"><i class="fa fa-home"></i></span>Lifestyle PA</h4>
-                <p>Recruitment and management of household staff. Paying bills and setting up accounts. Management of contractors and external suppliers</p>
-                <p>Running errands. Full handling of personal engagements. De-cluttering sessions. Filing systems. Personal shopping including gift buying.</p>  
-        
+                <p>Recruitment and management of household staff, Paying bills and setting up accounts, Management of contractors and external suppliers</p>
+                <p>Running errands, Full handling of personal engagements, De-cluttering sessions, Filing systems, Personal shopping including gift buying.</p>  
     	</div>
+    	</div>
+    	  <div class="col-md-4">
+    	  	<div class="text-panel">
+					  <h4><span class="services-icons"><i class="fa fa-tags"></i></span>
+					  Travel Co-ordination</h4>
+			 <p>Researching and booking holidays. Visa applications. Complex flight itineraries. Customs and excise liaison. </p>
+				</div>
+				</div>
+    	 <div class="col-md-4">
+    	 <div class="text-panel">
+                    <h4><span class="services-icons"><i class="fa fa-star-o"></i></span>
+                     Concierge Services</h4>
+                     <p>Access to sold out gigs, concerts, sporting events and festivals. Tickets to film premiers and awards ceremonies. VIP treatment at restaurants, bars, clubs. Priority booking at critically acclaimed restaurants.</p>
+                   </div>
+                   </div>
+
     <!--/row-->
 </div>           
 <div class="divider"></div>
          
 <div class="row">
-                <div class="col-md-4">
-                    <h4><span class="services-icons"><i class="fa fa-star-o"></i></span>
-                     Concierge Services</h4>
-                     <p>Access to sold out gigs, concerts, sporting events and festivals. Tickets to film premiers and awards ceremonies. VIP treatment at restaurants, bars, clubs. Priority booking at critically acclaimed restaurants.</p>
-                    	
-                    </div>
+                 <div class="col-md-4 col-sm-6">
+                 <div class="text-panel">
+                <h4><span class="services-icons"><i class="fa fa-line-chart"></i></span>Business PA</h4>
                
-                <div class="col-md-4">
-					  <h4><span class="services-icons"><i class="fa fa-tags"></i></span>
-					  Travel Co-ordination</h4>
-			 <p>Researching and booking holidays. Visa applications. Complex flight itineraries. Customs and excise liaison. </p>
-				  
-				</div>
+                <p>Diary coordination. Implementing systems and processes. HR support. Managing exhibitions at trade shows.</p>
+                <p>Attending events on behalf of clients. Filing systems. Office relocations. PR support. Website design. Point of contact for clients. IT Support.</p>
+                 </div>
+            </div>
             <div class="col-md-4">
-  <h4><span class="services-icons"><i class="fa fa-key "></i></span>
-					  Property Management</h4>
-					
-					  
+            <div class="text-panel">
+  <h4><span class="services-icons"><i class="fa fa-key "></i></span>Property Management</h4>
 					 <p>Property searching. Relocations. Refurbishments. Overseeing and managing repairs and maintenance. Arranging insurances. UK / Overseas moves. Holiday let management. </p>
+					</div>
+					</div>	
 					
-					</div>			
+					    <div class="col-md-4 col-sm-6">
+					    <div class="text-panel">
+                    <h4><span class="services-icons"><i class="fa fa-birthday-cake"></i></span>Event Management</h4>
+              
+                <p>Full scale management of weddings, parties and celebrations. Liaising with suppliers. Sourcing unusual items. Monitoring budgets.</p>
+                </div>	
+                </div>	
        
 
 </div>
@@ -295,8 +244,10 @@ $('.bg-2').parallax({
 
 <!--parallax 3 -->
 <section id="contact" class="bg-4 text-center">
-     <!--<h1 class="section-title">Get in touch</h1>
-    <p class="lead"></p>-->
+ <!--<div class="image-overlay">
+    <h1 class="section-title">Get in touch</h1>
+    <p class="lead"></p>
+    </div>-->
 </section>
 <!--/parallax 3-->
 <div class="container">
@@ -368,6 +319,63 @@ $('.bg-2').parallax({
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    
+    <script>    /**
+ * Author: Heather Corey
+ * jQuery Simple Parallax Plugin
+ *
+ */
+ 
+(function($) {
+ 
+    $.fn.parallax = function(options) {
+ 
+        var windowHeight = $(window).height();
+ 
+        // Establish default settings
+        var settings = $.extend({
+            speed        : 0.15
+        }, options);
+ 
+        // Iterate over each object in collection
+        return this.each( function() {
+ 
+        	// Save a reference to the element
+        	var $this = $(this);
+ 
+        	// Set up Scroll Handler
+        	$(document).scroll(function(){
+ 
+    		        var scrollTop = $(window).scrollTop();
+            	        var offset = $this.offset().top;
+            	        var height = $this.outerHeight();
+ 
+    		// Check if above or below viewport
+			if (offset + height <= scrollTop || offset >= scrollTop + windowHeight) {
+				return;
+			}
+ 
+			var yBgPosition = Math.round((offset - scrollTop) * settings.speed);
+ 
+                 // Apply the Y Background Position to Set the Parallax Effect
+    			$this.css('background-position', 'center ' + yBgPosition + 'px');
+                
+        	});
+        });
+    }
+}(jQuery));
+
+$('.bg-1,.bg-3').parallax({
+	speed :	0.15
+});
+
+$('.bg-2').parallax({
+	speed :	0.25
+});
+</script>
+    
+    
+    
 
     <!-- Custom Theme JavaScript -->
     <script>

@@ -14,8 +14,8 @@ body {
 
 body {
     font-family: "adelle",serif;
-    color: #0c282b;
-    background-color:#fcfcfc;
+    color: #0d0404;
+    background-color:#f7f7f7;
 }
 
 h1, h2, h3, p {
@@ -34,7 +34,7 @@ p {
 	font-variant: normal;
 	line-height: 2em;
     text-align: justify;
-    color: #11373a;
+    color: #1c0a08;
 }
 
 blockquote {
@@ -43,6 +43,8 @@ blockquote {
 	font-variant: normal;
 	font-weight: 400;
 	line-height: 30px;
+	margin: 36px;
+    padding: 12px 22px;
 }
 pre {
 	font-size: 13px;
@@ -180,9 +182,22 @@ hr.small {
 
 section {
     height:500px;
-    padding-top:50px;
-    padding-bottom:50px;
     overflow:auto;
+}
+
+
+section .image-overlay {
+    background-color: rgba(33,33,33 , 0.1 );
+    background-image: url("../img/image-overlay.png") !important;
+}
+
+
+section .image-overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat;
 }
 
 .section {
@@ -194,9 +209,13 @@ section {
 
 .section-title h2{
 	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 3em;
+	font-size: 2.6em;
     line-height: 2.8em;
     font-weight: 300;
+}
+
+.text-panel {
+    margin-bottom: 20px;
 }
 
 .col-md-4 {
@@ -228,10 +247,6 @@ section {
 
 .bg-4 {
 	background: url('../img/bg-3.jpg') no-repeat bottom center fixed;
-    background-size:cover;
-}
-.bg-5 {
-	background: url('../img/bg-4.jpg') no-repeat bottom center fixed;
     background-size:cover;
 }
 
@@ -330,14 +345,8 @@ section {
     width: 100%;
 }
 
-.brand-footer a span {
-	    text-transform:uppercase;
-	font-family: Raleway;
-	font-weight:400;
-	
-}
-
 .brand-intro {
+	color: #0d0404;
 	padding:0;
     margin:0;
     -webkit-transition: background .3s ease-in-out;
@@ -348,25 +357,26 @@ section {
 .brand-intro:hover,
 .brand-intro:focus {
     outline: 0;
-    color: #fff;
+    color: #fcfcfc;
 }
 
 .brand-intro:hover i.animated{
+	-webkit-animation-name: pulse;
+	-moz-animation-name: pulse;
+	-webkit-animation-duration: 1.5s;
+	-moz-animation-duration: 1.5s;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-timing-function: linear;
+ 
+}
+
+.brand-intro i.animated {
     -webkit-transition-property: -webkit-transform;
     -webkit-transition-duration: 1s;
     -moz-transition-property: -moz-transform;
     -moz-transition-duration: 1s;
-}
-
-.brand-intro i.animated {
-    -webkit-animation-name: pulse;
-    -moz-animation-name: pulse;
-    -webkit-animation-duration: 1.5s;
-    -moz-animation-duration: 1.5s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
 }
 
 @-webkit-keyframes pulse {    
@@ -413,10 +423,6 @@ section {
     margin: 0 auto;
 }
 
-.about-img {
-    margin-top:-126px;
-}
-
 /* Services */
 
 .services {
@@ -426,7 +432,6 @@ section {
 .services-icons {
 	margin-right:12px;
 }
-
 
 /* Callout */
 
