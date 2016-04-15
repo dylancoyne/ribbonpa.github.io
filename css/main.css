@@ -216,15 +216,16 @@ section .image-overlay {
     overflow:auto;
 }
 
-.section-title h2{
-	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 3em;
-    line-height: 2.6em;
-    font-weight: 300;
+.section-title {
+	margin: 66px 0 26px;
 }
 
 .text-panel {
     margin-bottom: 26px;
+}
+
+.text-panel img {
+	margin:0 auto;
 }
 
 .fa-circle {
@@ -234,7 +235,7 @@ section .image-overlay {
     padding-right: 2px;
 }
 
-.col-md-4 {
+.col-md-4, .col-lg-3, .col-lg-5, .col-lg-8, col-lg-12 {
     padding-right: 25px;
     padding-left: 25px;
 }
@@ -243,27 +244,6 @@ section .image-overlay {
 	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: 600;
 	font-size:17px;
-}
-
-
-.bg-1 {
-	background: url('../img/bg.jpg') no-repeat center center fixed;
-    background-size:cover;
-}
-  
-.bg-2 {
-	background: url('../img/bg-1.jpg') no-repeat top center fixed;
-    background-size:cover;
-}
-
-.bg-3 {
-	background: url('../img/bg-2.jpg') no-repeat bottom center fixed;
-    background-size:cover;
-}
-
-.bg-4 {
-	background: url('../img/bg-3.jpg') no-repeat bottom center fixed;
-    background-size:cover;
 }
 
 /* Header */
@@ -465,9 +445,22 @@ section .image-overlay {
 }
 
 /* Contact */
-.location-text {
+
+
+@media(min-width:768px) {
+    .location-text {
 	padding: 12px 44px;
     line-height: 1.8em;
+    font-size: 16px;
+    font-weight: 300;
+    color: #1c0a08;
+    margin-bottom: 32px;
+}
+}
+
+.location-text {
+	padding: 0;
+	line-height: 1.8em;
     font-size: 16px;
     font-weight: 300;
     color: #1c0a08;
@@ -498,18 +491,6 @@ section .image-overlay {
     margin: 10px;
 }
 
-/* Map */
-
-.map {
-    height: 500px;
-}
-
-@media(max-width:768px) {
-    .map {
-        height: 75%;
-    }
-}
-
 /* Footer */
 
 #footer { 
@@ -531,4 +512,73 @@ footer span {
     text-align: center;
 
 }
+
+
+/* Desktop Media Queries */
+@media (min-width: 651px){
+.bg-1 {
+	background: url('../img/bg.jpg') no-repeat center center fixed;
+	background-size:cover;
+}
+  
+.bg-2 {
+	background: url('../img/bg-1.jpg') no-repeat top center fixed;
+    background-size:cover;
+}
+
+.bg-3 {
+	background: url('../img/bg-2.jpg') no-repeat bottom center fixed;
+    background-size:cover;
+}
+
+.bg-4 {
+	background: url('../img/bg-3.jpg') no-repeat bottom center fixed;
+    background-size:cover;
+}
+
+.section-title h2{
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 3em;
+    font-weight: 300;
+    }
+    
+}
+
+
+
+/* Mobile Media Queries */
+@media (max-width: 650px) {
+    .bg-1 {
+	background: url('../img/bg-sm.jpg') no-repeat center center fixed;
+    background-size:cover;
+}
+  
+.bg-2 {
+	background: url('../img/bg-1-sm.jpg') no-repeat top center fixed;
+    background-size:cover;
+}
+
+.bg-3 {
+	background: url('../img/bg-2-sm.jpg') no-repeat bottom center fixed;
+    background-size:cover;
+}
+
+.bg-4 {
+	background: url('../img/bg-3-sm.jpg') no-repeat bottom center fixed;
+    background-size:cover;
+}
+
+.section-title h2{
+	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 2.4em;
+	font-weight: 300;
+}
+
+}
+
+
+
+
+
+
 
