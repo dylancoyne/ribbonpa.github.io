@@ -287,7 +287,7 @@
              <div class="row">  
                <div class="col-lg-4 text-center">
                <div class="text-panel">
-				  <div class="contact-icon" style="font-size: 25px;">
+				  <div class="contact-icon" style="font-size: 32px;">
 				  		<i class="fa fa-mobile-phone"></i>
 				  </div>
 				  <div class="contact-text">
@@ -315,9 +315,9 @@
 				  		<i class="fa fa-map-marker"></i>
 				  </div>
 				  <div class="contact-text">
-						Haywards Heath
+						Handcross
 						<br>
-						West Sussex RH17 6HQ
+						West Sussex
 				  </div> 
 				  </div>
 			</div>
@@ -350,18 +350,27 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    
-    <script>    /**
+    <script>    
+/**
  * Author: Heather Corey
  * jQuery Simple Parallax Plugin
  *
  */
  
+/**
+ * Author: Heather Corey
+ * jQuery Simple Parallax Plugin
+ *
+ */
+
 (function($) {
  
     $.fn.parallax = function(options) {
+      
+      $window = $(window);
  
         var windowHeight = $(window).height();
+        
  
         // Establish default settings
         var settings = $.extend({
@@ -369,6 +378,7 @@
         }, options);
  
         // Iterate over each object in collection
+      if( $window.width() > 800){
         return this.each( function() {
  
         	// Save a reference to the element
@@ -383,30 +393,39 @@
  
     		// Check if above or below viewport
 			if (offset + height <= scrollTop || offset >= scrollTop + windowHeight) {
-				return;
-			}
+              
+           
+              return;
+            }
+              
+              
  
 			var yBgPosition = Math.round((offset - scrollTop) * settings.speed);
  
                  // Apply the Y Background Position to Set the Parallax Effect
     			$this.css('background-position', 'center ' + yBgPosition + 'px');
-                
+              
+             
         	});
+        
         });
+      }
     }
 }(jQuery));
+  
 
-$('.bg-2,.bg-4').parallax({
+
+
+$('.bg-1,.bg-3').parallax({
 	speed :	0.15
 });
 
-$('.bg-3').parallax({
+$('.bg-2').parallax({
 	speed :	0.25
 });
+
+
 </script>
-    
-    
-    
 
     <!-- Custom Theme JavaScript -->
     <script>

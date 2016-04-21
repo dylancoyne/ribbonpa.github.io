@@ -33,7 +33,7 @@ p {
 	font-family:adelle;
 	font-style: normal;
 	font-variant: normal;
-	line-height: 2em;
+	line-height: 2.2em;
     text-align: justify;
     color: #1c0a08;
 }
@@ -48,12 +48,11 @@ p.services-lists {
 }
 
 blockquote {
-	font-size: 21px;
-    font-style: normal;
+	font-style: normal;
     font-variant: normal;
     font-weight: 300;
-    line-height: 30px;
-    padding: 12px 22px;
+    line-height: 32px;
+    padding: 32px 38px;
 }
 pre {
 	font-size: 13px;
@@ -186,7 +185,7 @@ hr.small {
 }
 
 .divider {
-    height:50px;
+    height:90px;
 }
 
 section {
@@ -216,9 +215,103 @@ section .image-overlay {
     overflow:auto;
 }
 
-.section-title {
-	margin: 66px 0 26px;
+/* Background Images */
+
+/* This applies from 0px to 768px */
+.bg-1 {
+	background: url('../img/bg-sm.jpg') no-repeat top center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	height: 500px;
 }
+  
+.bg-2 {
+	background: url('../img/bg-1-sm.jpg') no-repeat top center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+    height: 240px;
+}
+
+.bg-3 {
+	background: url('../img/bg-2-sm.jpg') no-repeat 0 0;
+    height: 240px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+.bg-4 {
+	background: url('../img/bg-3-sm.jpg') no-repeat 0 0;
+    height: 240px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+/* This applies from 768px onwards */
+@media (min-width: 768px) {
+   .bg-1 {
+	  background: url('../img/bg.jpg') no-repeat center center fixed;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+   }
+
+   .bg-2 {
+	  background: url('../img/bg-1.jpg') no-repeat top center fixed;
+	  height: 500px;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+   }
+
+   .bg-3 {
+	  background: url('../img/bg-2.jpg') no-repeat bottom center fixed;
+	  height: 500px;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+   }
+  
+   .bg-4 {
+	  background: url('../img/bg-3.jpg') no-repeat bottom center fixed;
+	  height: 500px;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+   }
+}
+
+.section-title {
+	margin: 76px 0 36px;
+}
+
+.section-title h2{
+	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 3.4em;
+    font-weight: 300;
+    /* text-align: left; */
+    line-height: 52px;
+}
+
+@media (min-width: 768px) {
+  .section-title h2{
+	 font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	 font-size: 3em;
+	 font-weight: 300;
+  }
+}
+    
 
 .text-panel {
     margin-bottom: 26px;
@@ -235,9 +328,9 @@ section .image-overlay {
     padding-right: 2px;
 }
 
-.col-md-4, .col-lg-3, .col-lg-5, .col-lg-8, col-lg-12 {
-    padding-right: 25px;
-    padding-left: 25px;
+.col-md-4, .col-lg-3, .col-lg-5, .col-lg-8, .col-lg-12, .brand-header{
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .col-md-4 h4{
@@ -253,11 +346,6 @@ section .image-overlay {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../img/bg.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
 }
 
 #top h1{
@@ -309,19 +397,26 @@ section .image-overlay {
 			opacity: 1;
 		}
 	}
-
-.brand-header {
-    -moz-animation: reveal-banner 1s 0.25s ease-in-out;
-	-webkit-animation: reveal-banner 1s 0.25s ease-in-out;
-	-ms-animation: reveal-banner 1s 0.25s ease-in-out;
-	animation: reveal-banner 1s 0.25s ease-in-out;
-	-moz-animation-fill-mode: forwards;
-			-webkit-animation-fill-mode: forwards;
-	-ms-animation-fill-mode: forwards;
-	animation-fill-mode: forwards;
-	opacity:0;
-	margin-top: 50px;
 	
+/*.brand-header {
+    -webkit-animation: reveal-banner none !important;
+ 	-moz-animation: reveal-banner none !important;
+ 	-o-animation: reveal-banner none !important;
+ 	-ms-animation: reveal-banner none !important;
+	animation: reveal-banner none !important;
+	opacity:1;
+}*/	
+.brand-header {
+	 -moz-animation: reveal-banner 1s 0.25s ease-in-out;
+	 -webkit-animation: reveal-banner 1s 0.25s ease-in-out;
+	 -ms-animation: reveal-banner 1s 0.25s ease-in-out;
+	 animation: reveal-banner 1s 0.25s ease-in-out;
+	 -moz-animation-fill-mode: forwards;
+	 -webkit-animation-fill-mode: forwards;
+	 -ms-animation-fill-mode: forwards;
+	 animation-fill-mode: forwards;
+	 opacity:0;
+	 margin-top: 66px;
 }
 
 .brand-header h3 {
@@ -343,7 +438,7 @@ section .image-overlay {
 }
 
 .brand-intro {
-	color: #f7f7f7;
+	color: #34a9b4;
 	padding:0;
     margin:0;
     -webkit-transition: background .3s ease-in-out;
@@ -354,26 +449,56 @@ section .image-overlay {
 .brand-intro:hover,
 .brand-intro:focus {
     outline: 0;
-    color: #0d0404;
+    color: #f7f7f7;
 }
 
-.brand-intro:hover i.animated{
-	-webkit-animation-name: pulse;
-	-moz-animation-name: pulse;
-	-webkit-animation-duration: 1.5s;
-	-moz-animation-duration: 1.5s;
-	-webkit-animation-iteration-count: infinite;
-	-moz-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
-	-moz-animation-timing-function: linear;
+.brand-intro i.animated, .brand-intro:hover i.animated {
+	-o-transition-property: none !important;
+	-moz-transition-property: none !important;
+	-ms-transition-property: none !important;
+	-webkit-transition-property: none !important;
+	transition-property: none !important;
+	-webkit-animation: none !important;
+	-moz-animation: none !important;
+	-o-animation: none !important;
+	-ms-animation: none !important;
+	animation: none !important;
+}
+
+@media (min-width: 768px) {
+   .brand-intro {
+	   color: #f7f7f7;
+	   padding:0;
+	   margin:0;
+	   -webkit-transition: background .3s ease-in-out;
+	   -moz-transition: background .3s ease-in-out;
+	   transition: background .3s ease-in-out;
+   }
+
+   .brand-intro:hover,
+   .brand-intro:focus {
+	   outline: 0;
+	   color: #0d0404;
+   }
+
+   .brand-intro:hover i.animated{
+	   -webkit-animation-name: pulse;
+	   -moz-animation-name: pulse;
+	   -webkit-animation-duration: 1.5s;
+	   -moz-animation-duration: 1.5s;
+	   -webkit-animation-iteration-count: infinite;
+	   -moz-animation-iteration-count: infinite;
+	   -webkit-animation-timing-function: linear;
+	   -moz-animation-timing-function: linear;
  
-}
+   }
 
-.brand-intro i.animated {
-    -webkit-transition-property: -webkit-transform;
-    -webkit-transition-duration: 1s;
-    -moz-transition-property: -moz-transform;
-    -moz-transition-duration: 1s;
+   .brand-intro i.animated {
+	   -webkit-transition-property: -webkit-transform;
+	   -webkit-transition-duration: 1s;
+	   -moz-transition-property: -moz-transform;
+	   -moz-transition-duration: 1s;
+   }
 }
 
 @-webkit-keyframes pulse {    
@@ -461,7 +586,7 @@ section .image-overlay {
 .location-text {
 	padding: 0;
 	line-height: 1.8em;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
     color: #1c0a08;
     margin-bottom: 32px;
@@ -469,7 +594,7 @@ section .image-overlay {
 
 .contact-icon {
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 27px;
     height: 35px;
 }
 
@@ -494,10 +619,10 @@ section .image-overlay {
 /* Footer */
 
 #footer { 
-	padding: 54px 0;
+	padding: 44px 0;
     background-color:#efefef;
-    margin-top:50px;
     width:100%;
+    border-top: 1px solid #ddd;
 
 }
 
@@ -505,80 +630,10 @@ section .image-overlay {
     font-family: "KGWaystoSayGoodbye";
     font-size: 32px;
     color:#34a9b4;
+    top: 12px;
+    position: relative;
 }
 
 footer span {
-
     text-align: center;
-
 }
-
-
-/* Desktop Media Queries */
-@media (min-width: 651px){
-.bg-1 {
-	background: url('../img/bg.jpg') no-repeat center center fixed;
-	background-size:cover;
-}
-  
-.bg-2 {
-	background: url('../img/bg-1.jpg') no-repeat top center fixed;
-    background-size:cover;
-}
-
-.bg-3 {
-	background: url('../img/bg-2.jpg') no-repeat bottom center fixed;
-    background-size:cover;
-}
-
-.bg-4 {
-	background: url('../img/bg-3.jpg') no-repeat bottom center fixed;
-    background-size:cover;
-}
-
-.section-title h2{
-    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 3em;
-    font-weight: 300;
-    }
-    
-}
-
-
-
-/* Mobile Media Queries */
-@media (max-width: 650px) {
-    .bg-1 {
-	background: url('../img/bg-sm.jpg') no-repeat center center fixed;
-    background-size:cover;
-}
-  
-.bg-2 {
-	background: url('../img/bg-1-sm.jpg') no-repeat top center fixed;
-    background-size:cover;
-}
-
-.bg-3 {
-	background: url('../img/bg-2-sm.jpg') no-repeat bottom center fixed;
-    background-size:cover;
-}
-
-.bg-4 {
-	background: url('../img/bg-3-sm.jpg') no-repeat bottom center fixed;
-    background-size:cover;
-}
-
-.section-title h2{
-	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 2.4em;
-	font-weight: 300;
-}
-
-}
-
-
-
-
-
-
-
