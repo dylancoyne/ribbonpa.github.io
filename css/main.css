@@ -38,20 +38,11 @@ p {
     color: #1c0a08;
 }
 
-p.services-lists {
-	font-family:adelle;
-	font-style: normal;
-	font-variant: normal;
-	line-height: 2em;
-    color: #1c0a08;
-    text-align:left;
-}
-
 blockquote {
 	font-style: normal;
     font-variant: normal;
     font-weight: 300;
-    line-height: 32px;
+    line-height: 38px;
     padding: 32px 38px;
 }
 pre {
@@ -398,14 +389,21 @@ section .image-overlay {
 		}
 	}
 	
-/*.brand-header {
-    -webkit-animation: reveal-banner none !important;
- 	-moz-animation: reveal-banner none !important;
- 	-o-animation: reveal-banner none !important;
- 	-ms-animation: reveal-banner none !important;
-	animation: reveal-banner none !important;
+.brand-header {
+    -webkit-animation: none;
+ 	-moz-animation: none ;
+ 	-o-animation: none ;
+ 	-ms-animation: none;
+	animation: none;
+	-moz-animation-fill-mode: none;
+	-webkit-animation-fill-mode: none;
+	-ms-animation-fill-mode: none;
+	animation-fill-mode: none;
 	opacity:1;
-}*/	
+	margin-top: 66px;
+}
+
+@media (min-width: 768px) {
 .brand-header {
 	 -moz-animation: reveal-banner 1s 0.25s ease-in-out;
 	 -webkit-animation: reveal-banner 1s 0.25s ease-in-out;
@@ -417,6 +415,7 @@ section .image-overlay {
 	 animation-fill-mode: forwards;
 	 opacity:0;
 	 margin-top: 66px;
+}
 }
 
 .brand-header h3 {
@@ -433,14 +432,15 @@ section .image-overlay {
 
 .brand-footer {
 	position: absolute;
-    bottom: 8px;
+    bottom: 14px;
     width: 100%;
 }
 
 .brand-intro {
-	color: #34a9b4;
+	color: #f7f7f7;
 	padding:0;
     margin:0;
+    font-weight:600;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
@@ -449,7 +449,7 @@ section .image-overlay {
 .brand-intro:hover,
 .brand-intro:focus {
     outline: 0;
-    color: #f7f7f7;
+    color: #0d0404;
 }
 
 .brand-intro i.animated, .brand-intro:hover i.animated {
@@ -466,10 +466,16 @@ section .image-overlay {
 }
 
 @media (min-width: 768px) {
+   .brand-footer {
+	   position: absolute;
+	   bottom: 8px;
+	   width: 100%;
+   }
    .brand-intro {
 	   color: #f7f7f7;
 	   padding:0;
 	   margin:0;
+	   font-weight:inherit;
 	   -webkit-transition: background .3s ease-in-out;
 	   -moz-transition: background .3s ease-in-out;
 	   transition: background .3s ease-in-out;
@@ -571,25 +577,24 @@ section .image-overlay {
 
 /* Contact */
 
+.location-text {
+	padding: 12px 44px;
+	line-height: 1.8em;
+	font-size: 16px;
+	font-weight: 300;
+	color: #1c0a08;
+	margin-bottom: 32px;
+}
 
 @media(min-width:768px) {
     .location-text {
-	padding: 12px 44px;
-    line-height: 1.8em;
-    font-size: 16px;
-    font-weight: 300;
-    color: #1c0a08;
-    margin-bottom: 32px;
-}
-}
-
-.location-text {
-	padding: 0;
-	line-height: 1.8em;
-    font-size: 18px;
-    font-weight: 300;
-    color: #1c0a08;
-    margin-bottom: 32px;
+	   padding: 0;
+	   line-height: 1.8em;
+	   font-size: 18px;
+	   font-weight: 300;
+	   color: #1c0a08;
+	   margin-bottom: 32px;
+	}
 }
 
 .contact-icon {
