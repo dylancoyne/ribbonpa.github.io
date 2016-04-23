@@ -45,10 +45,10 @@
                 <a href="#top" onclick = $("#menu-close").click(); >Home</a>
             </li>
             <li>
-                <a href="#about" onclick = $("#menu-close").click(); >The Ribbon story</a>
+                <a href="#story" onclick = $("#menu-close").click(); >The Ribbon story</a>
             </li>
             <li>
-                <a href="#services" onclick = $("#menu-close").click(); >What does Ribbon do?</a>
+                <a href="#support" onclick = $("#menu-close").click(); >What does Ribbon do?</a>
             </li>
             <li>
                 <a href="#contact" onclick = $("#menu-close").click(); >Get in touch</a>
@@ -70,13 +70,13 @@
 <!--/parallax 1-->
 <div id="home" class="container">
     <div class="row">
-    	<div class="col-lg-12 text-center">
+    	<div class="col-lg-10 col-lg-offset-1 text-center">
     		<div class="section-title">
     			<h2>How can Ribbon help?</h2>
     		</div>
    		 </div>
-   		</div>
-   		<div class="row">
+   		
+   		
         <div class="col-md-4">
                 <div class="text-panel">      
                      <h4>Lighten your workload</h4>
@@ -94,7 +94,7 @@
              <p>Ribbon offers the flexibility of confidential, high level PA support without the commitment of a full time member of staff. In your office, home or virtually, tasks can be project based, weekly or just ad hoc. Some clients prefer an initial face to face meeting and some just hand over their to do list and leave the rest to Ribbon.</p>
         </div>
     </div>
-    </div>
+   
     <!--/row-->
     
 </div>
@@ -108,7 +108,7 @@
     </div>-->
 </section>
 <!--/parallax 2-->
-<div class="container">
+<div id="story" class="container">
                      <div class="row">
             	<div class="col-lg-12 text-center">
             <div class="section-title">
@@ -147,13 +147,13 @@
 <!--/container-->
 <div class="divider"></div>
 <!--parallax 2 -->
-<section id="services" class="bg-3 text-center">
+<section id="services" class="bg-3">
      <!--<h1 class="section-title">Services</h1>
            <p class="lead">Need help with your office management<br>...or researching an unusual gift? Even organising a bespoke event.</p>-->
 </section>
 <!--/parallax 2-->
 
-<div class="container">
+<div id="support" class="container">
  <div class="row">
     	<div class="col-lg-12 text-center">
     		<div class="section-title">
@@ -185,7 +185,7 @@
     <!--/row-->
 </div>           
 <div class="row">
-                 <div class="col-md-4 col-sm-6">
+                 <div class="col-md-4">
                  <div class="text-panel">
                 <h4><span class="services-icons"><i class="fa fa-line-chart"></i></span>Business PA</h4>
                
@@ -199,7 +199,7 @@
 					</div>
 					</div>	
 					
-					    <div class="col-md-4 col-sm-6">
+					    <div class="col-md-4">
 					     <div class="text-panel">
                     <h4><span class="services-icons"><i class="fa fa-star-o"></i></span>
                      Concierge Services</h4>
@@ -214,7 +214,7 @@
 <div class="divider"></div>
 
 <!--parallax 3 -->
-<section id="contact" class="bg-4 text-center">
+<section id="contact" class="bg-4">
  <!--<div class="image-overlay">
     <h1 class="section-title">Get in touch</h1>
     <p class="lead"></p>
@@ -322,7 +322,7 @@
         }, options);
  
         // Iterate over each object in collection
-      if( $window.width() > 800){
+      if( $window.width() > 1024){
         return this.each( function() {
  
         	// Save a reference to the element
