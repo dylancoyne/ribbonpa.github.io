@@ -19,7 +19,7 @@ body {
     font-size:1.25em;
 }
 
-h1, h2, h3, p {
+h2, h3, p {
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -628,6 +628,14 @@ and (max-device-width : 1024px) {
     font-weight: 300;
     line-height: 1.6em;
     color: #1c0a08;
+}
+
+a[href^="tel:"]:before {
+    color:inherit;
+    text-decoration:inherit;
+    font-size:inherit;
+    font-style:inherit;
+    font-weight:inherit;
 }
 
 /* Call to Action */
