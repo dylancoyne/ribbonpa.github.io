@@ -1,0 +1,13 @@
+.brand-header {
+    -webkit-animation: none;
+ 	-moz-animation: none ;
+ 	-o-animation: none ;
+ 	-ms-animation: none;
+	animation: none;
+	-moz-animation-fill-mode: none;
+	-webkit-animation-fill-mode: none;
+	-ms-animation-fill-mode: none;
+	animation-fill-mode: none;
+	opacity:1;
+	margin-top:66px;
+}

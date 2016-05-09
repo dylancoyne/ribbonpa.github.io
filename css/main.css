@@ -19,8 +19,8 @@ body {
     font-size:1.25em;
 }
 
-h2, h3, p {
-	text-rendering: optimizeLegibility;
+h1, h2, h3, p {
+	text-rendering: auto;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -179,7 +179,7 @@ hr.small {
     height:90px;
 }
 
-section {
+header, section {
     display:table;
     position:relative;
     width:100%;
@@ -358,15 +358,6 @@ and (max-device-width : 1024px) {
     height: 100%;
 }
 
-#top h1{
-	font-family: "KGWaystoSayGoodbye";
-    color: #123639;
-    font-size: 70px;
-    position: relative;
-    top: 50px;
-}
-
-
 
 	@-moz-keyframes reveal-banner {
 		0% {
@@ -419,7 +410,8 @@ and (max-device-width : 1024px) {
 	-ms-animation-fill-mode: none;
 	animation-fill-mode: none;
 	opacity:1;
-	margin-top: 66px;
+	position:relative;
+	top:66px;
 }
 
 @media (min-width: 768px) {
@@ -433,11 +425,12 @@ and (max-device-width : 1024px) {
 	 -ms-animation-fill-mode: forwards;
 	 animation-fill-mode: forwards;
 	 opacity:0;
-	 margin-top: 66px;
-}
+	 position:relative;
+	 top:66px;
+	}
 }
 
-.brand-header h3 {
+.brand-header h1 {
 	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-style: normal;
     font-variant: normal;
@@ -445,7 +438,7 @@ and (max-device-width : 1024px) {
     color: #34a9b4;
     text-shadow: none;
     font-size: 21px;
-    margin-top: 28px;
+    margin:0;
    
 }
 
@@ -658,14 +651,7 @@ a[href^="tel:"]:before {
 
 }
 
-#footer h4.logo-sml {
-    font-family: "KGWaystoSayGoodbye";
-    font-size: 32px;
-    color:#34a9b4;
-    top: 12px;
-    position: relative;
-}
-
-footer span {
+#footer span {
     text-align: center;
+    display:block;
 }
