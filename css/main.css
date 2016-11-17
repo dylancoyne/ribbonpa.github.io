@@ -103,12 +103,20 @@ hr.small {
 
 /* Side Menu */
 
-.menu-title{
+.menu-title {
 	padding-right: 8px;
-    padding-top: 2px;
-    font-size: 14px;
-    vertical-align: center;
-    float: left;
+	padding-top: 4px;
+	font-size: 12px;
+	float: left;
+	font-family: 'raleway';
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  	.menu-title {
+		display:none;
+	}
 }
 
 #sidebar-wrapper {
@@ -234,6 +242,7 @@ header, section {
 	-o-background-size: cover;
 }
 
+
 /* This applies from 768px onwards */
 @media (min-width: 768px) {
    .bg-1 {
@@ -270,11 +279,13 @@ header, section {
 	  background-size: cover;
 	  -o-background-size: cover;
    }
+ 
 }
 
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
+
 	.bg-1 {
 	  background: url('../img/bg.jpg') no-repeat top center;
 	  -webkit-background-size: cover;
@@ -457,10 +468,9 @@ and (max-device-width : 1024px) {
 }
 
 .brand-intro {
-	color: #f7f7f7;
+	color: #013437;
 	padding:0;
     margin:0;
-    font-weight:600;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
@@ -469,7 +479,7 @@ and (max-device-width : 1024px) {
 .brand-intro:hover,
 .brand-intro:focus {
     outline: 0;
-    color: #0d0404;
+    color: #34a9b4;
 }
 
 .brand-intro i.animated, .brand-intro:hover i.animated {
@@ -492,7 +502,7 @@ and (max-device-width : 1024px) {
 	   width: 100%;
    }
    .brand-intro {
-	   color: #f7f7f7;
+	   color: #013437;
 	   padding:0;
 	   margin:0;
 	   font-weight:inherit;
@@ -504,7 +514,7 @@ and (max-device-width : 1024px) {
    .brand-intro:hover,
    .brand-intro:focus {
 	   outline: 0;
-	   color: #0d0404;
+	   color: #34a9b4;
    }
 
    .brand-intro:hover i.animated{
