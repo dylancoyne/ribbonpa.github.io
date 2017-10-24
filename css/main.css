@@ -216,7 +216,7 @@ header, section {
 }
   
 .bg-2 {
-	background: url('../img/bg-1-sm.jpg') no-repeat top center;
+	background: url('../img/bg-5-sm.jpg') no-repeat top center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -234,7 +234,7 @@ header, section {
 }
 
 .bg-4 {
-	background: url('../img/bg-5-sm.jpg') no-repeat top center;
+	background: url('../img/bg-1-sm.jpg') no-repeat top center;
     height: 240px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -263,7 +263,7 @@ header, section {
    }
 
    .bg-2 {
-	  background: url('../img/bg-1.jpg') no-repeat top center fixed;
+	  background: url('../img/bg-5.jpg') no-repeat top center fixed;
 	  height: 500px;
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
@@ -281,7 +281,7 @@ header, section {
    }
   
    .bg-4 {
-	  background: url('../img/bg-5.jpg') no-repeat bottom center fixed;
+	  background: url('../img/bg-1.jpg') no-repeat bottom center fixed;
 	  height: 500px;
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
@@ -311,7 +311,7 @@ and (max-device-width : 1024px) {
 	  -o-background-size: cover;
 	}
 	.bg-2 {
-	background: url('../img/bg-1.jpg') no-repeat top center;
+	background: url('../img/bg-5.jpg') no-repeat top center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -329,7 +329,7 @@ and (max-device-width : 1024px) {
    }
 
    .bg-4 {
-	   background: url('../img/bg-5.jpg') no-repeat center center;
+	   background: url('../img/bg-1.jpg') no-repeat center center;
 	   -webkit-background-size: cover;
 	   -moz-background-size: cover;
 	   background-size: cover;
