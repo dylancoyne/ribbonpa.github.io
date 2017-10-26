@@ -618,6 +618,11 @@ h4{
 
 
 /* Carousel */
+
+#testimonials.contianer{
+  min-height: 540px
+}
+
 #quote-carousel {
   padding: 0 10px 30px 10px;
   text-align:center;
