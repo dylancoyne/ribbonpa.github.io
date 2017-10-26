@@ -358,15 +358,6 @@ and (max-device-width : 1024px) {
     line-height: 52px;
 }
 
-@media (min-width: 768px) {
-  .section-title h2{
-	 font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	 font-size: 3em;
-	 font-weight: 300;
-  }
-}
-    
-
 .text-panel {
     margin-bottom: 26px;
 }
@@ -619,7 +610,7 @@ h4{
 
 /* Carousel */
 
-#testimonials.contianer{
+#testimonials.container{
   min-height: 540px;
 }
 
@@ -742,4 +733,47 @@ a[href^="tel:"]:before {
 #footer span {
     text-align: center;
     display:block;
+}
+
+@media (min-width: 768px) {
+  .section-title h2{
+	 font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	 font-size: 3em;
+	 font-weight: 300;
+  }
+}
+
+@media(max-width: 480px) {
+  .section-title h2{
+	 font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	 font-size: 3em;
+	 font-weight: 300;
+  }
+  .carousel-indicators,
+  .carousel-indicators li {
+    cursor: default;
+    pointer-events: none;
+  }
+  #quote-carousel p {
+  	 font-style:italic;
+  	 font-size:14px;
+  	 text-align:center;
+  }
+  #quote-carousel .carousel-indicators li{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border-radius: 12px
+  }
+  #quote-carousel .carousel-indicators .active {
+    background: #34a9b4;
+    height:12px;
+    width:12px;
+    margin-bottom:1px;
+  }
+  .img-responsive {
+    display: block;
+    max-width: 80%;
+    height: auto;
+  }
 }
