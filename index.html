@@ -124,7 +124,7 @@
    		</div>
   	<div class="row">
     <div class="col-md-12 centered">
-      <div id="quote-carousel" class="carousel slide" data-ride="carousel">
+      <div id="quote-carousel" class="carousel slide" data-ride="carousel" data-pause="hover" data-interval="24000" data-duration="2000">
 			<!-- Bottom Carousel Indicators -->
 			<ol class="carousel-indicators">
 			  <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
@@ -133,62 +133,59 @@
 			  <li data-target="#quote-carousel" data-slide-to="3"></li>
 			</ol>
 			<!-- Carousel Slides / Quotes -->
-			<div class="carousel-inner">
+			<div class="carousel-inner" role="listbox">
 			<!-- Quote 1 -->
-			<div class="item active">
-			  <div class="row">
-				<div class="col-sm-12">
-				  <p>&ldquo;I honestly do not know how we survived before Victoria came in to our lives. She has brought a beautiful order to our otherwise chaotic system and has given us peace of mind to know that our ever expanding to do list is actually being done. 
+				<div class="item active">
+				  <div class="row">
+					<div class="col-sm-12">
+					  <p>&ldquo;I honestly do not know how we survived before Victoria came in to our lives. She has brought a beautiful order to our otherwise chaotic system and has given us peace of mind to know that our ever expanding to do list is actually being done. 
 
-			<p>Victoria has taken charge of every aspect of our busy lives; setting up a highly sophisticated filing system, managing our properties abroad, applying for planning permissions and helping us manage our building projects, buying a Highland cow and finding a husband for my friend! The list of tasks the team at Ribbon can help with is limitless.</p> 
+				<p>Victoria has taken charge of every aspect of our busy lives; setting up a highly sophisticated filing system, managing our properties abroad, applying for planning permissions and helping us manage our building projects, buying a Highland cow and finding a husband for my friend! The list of tasks the team at Ribbon can help with is limitless.</p> 
 
-			<p>We couldn’t feel luckier to have Ribbon’s support and I don’t want to recommend Victoria too much for fear of losing her! We trust her implicitly with every aspect of our lives.
-			&rdquo;</p>
-				  <strong>Natasha Kaplinsky OBE – Journalist and broadcaster</strong>
+				<p>We couldn’t feel luckier to have Ribbon’s support and I don’t want to recommend Victoria too much for fear of losing her! We trust her implicitly with every aspect of our lives.
+				&rdquo;</p>
+					  <strong>Natasha Kaplinsky OBE – Journalist and broadcaster</strong>
+					</div>
+				  </div>
 				</div>
-			  </div>
-			</div>
 
-			<!-- Quote 2 -->
-			<div class="item">
-			  <div class="row">
-				<div class="col-sm-12">
-				  <p>&ldquo;Some people like making sure that everything is organised, that your home and office are working brilliantly, and that your holidays and travel work like clockwork. Victoria is one. Probably the number one. Our lives are happier as a direct result.&rdquo;</p>
-				  <strong>Katie Derham - BBC Proms presenter</strong>
+				<!-- Quote 2 -->
+				<div class="item">
+				  <div class="row">
+					<div class="col-sm-12">
+					  <p>&ldquo;Some people like making sure that everything is organised, that your home and office are working brilliantly, and that your holidays and travel work like clockwork. Victoria is one. Probably the number one. Our lives are happier as a direct result.&rdquo;</p>
+					  <strong>Katie Derham - BBC Proms presenter</strong>
+					</div>
+				  </div>
 				</div>
-			  </div>
-			</div>
 
-			<!-- Quote 3 -->
-			<div class="item">
-			  <div class="row">
-				<div class="col-sm-12">
-				  <p>&ldquo;Victoria is the best lifestyle manager we have ever had. Please don't hire her in case she stops having time for us!&rdquo;</p>
-				  <strong>John Vincent MBE - Co-founder & CEO Leon Restaurants</strong>
+				<!-- Quote 3 -->
+				<div class="item">
+				  <div class="row">
+					<div class="col-sm-12">
+					  <p>&ldquo;Victoria is the best lifestyle manager we have ever had. Please don't hire her in case she stops having time for us!&rdquo;</p>
+					  <strong>John Vincent MBE - Co-founder & CEO Leon Restaurants</strong>
+					</div>
+				  </div>
 				</div>
-			  </div>
-			</div>
 
-			<!-- Quote 4 -->
-			<div class="item">
-			  <div class="row">
-				<div class="col-sm-12">
-			 <p>&ldquo;Ribbon has absolutely transformed our chaotic household by taking a
-			diverse range of tasks off our hands. From recruiting household staff with very specific skill sets across multiple locations to managing full house renovations and finding one-off items to global shipping and travel logistics, Victoria and her team take care of it effortlessly with the upmost
-			reliability and professionalism.</p>
+				<!-- Quote 4 -->
+				<div class="item">
+				  <div class="row">
+					<div class="col-sm-12">
+				 <p>&ldquo;Ribbon has absolutely transformed our chaotic household by taking a
+				diverse range of tasks off our hands. From recruiting household staff with very specific skill sets across multiple locations to managing full house renovations and finding one-off items to global shipping and travel logistics, Victoria and her team take care of it effortlessly with the upmost
+				reliability and professionalism.</p>
 
-			<p>Perhaps Ribbon's greatest strength is their depth of initiative, being
-			able to execute tasks with minimal instruction, making them the ultimate
-			partner for anybody short on time.&rdquo;</p>
-				 <strong>Julian Pearson - Co-founder First Point Equity</strong>
+				<p>Perhaps Ribbon's greatest strength is their depth of initiative, being
+				able to execute tasks with minimal instruction, making them the ultimate
+				partner for anybody short on time.&rdquo;</p>
+					 <strong>Julian Pearson - Co-founder First Point Equity</strong>
+					</div>
+				  </div>
 				</div>
-			  </div>
 			</div>
-			</div>
- 
-      </div> 
-      
-			<!-- Controls -->
+ 			<!-- Controls -->
 			<a class="left carousel-control" href="#quote-carousel" role="button" data-slide="prev">
 				<span class="fa fa-angle-left" aria-hidden="true"></span>
 				<span class="sr-only">Previous</span>
@@ -196,7 +193,8 @@
 			<a class="right carousel-control" href="#quote-carousel" role="button" data-slide="next">
 				<span class="fa fa-angle-right" aria-hidden="true"></span>
 				<span class="sr-only">Next</span>
-			</a>                              
+			</a>   
+      </div> 
     </div>
   </div>
 </div>
@@ -395,15 +393,11 @@
         </div>
  </footer>
 <!--/footer-->
-
-<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 <!-- jQuery -->
-    <!--<script src="js/jquery.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>--> 
     <script> 
 /**
  * Author: Heather Corey
