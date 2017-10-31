@@ -792,10 +792,6 @@ a[href^="tel:"]:before {
 	 font-size: 3em;
 	 font-weight: 300;
   }
-  
-  /*.carousel-inner{
-	overflow: visible;*/
-  }
 }
 
 @media(max-width: 480px) {
@@ -811,6 +807,7 @@ a[href^="tel:"]:before {
   }
   .carousel-control {
   display:none;
+  overflow:visible;
   }
   #quote-carousel {
   margin-left: 0px;
@@ -839,6 +836,7 @@ a[href^="tel:"]:before {
     width:12px;
     margin-bottom:1px;
   }
+ 
   .img-responsive {
     display: block;
     max-width: 80%;
