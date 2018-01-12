@@ -773,6 +773,11 @@ a[href^="tel:"]:before {
 
 /* Footer */
 
+.text-muted {
+	color: #999;
+	padding-bottom: 4px
+}
+
 #footer { 
 	padding: 44px 0;
     background-color:#efefef;
