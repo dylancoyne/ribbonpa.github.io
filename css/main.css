@@ -16,7 +16,7 @@ body {
     font-family: "adelle",serif;
     color: #0d0404;
     background-color:#f7f7f7;
-    font-size:1.25em;
+    font-size:17px;
 }
 
 h1, h2, h3, p {
@@ -207,26 +207,106 @@ header, section {
 
 /* This applies from 0px to 768px */
 .bg-1 {
-	background: url('../img/bg-sm.jpg') no-repeat top center;
+	background: url('../img/ribbon-help-home-office-sm.jpg') no-repeat top center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
 	height: 500px;
 }
+.no-webp .bg-1 {
+	background: url('../img/ribbon-help-home-office-sm.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	height: 500px;
+}
+
+.webp .bg-1{
+	background: url('../img/ribbon-help-home-office-sm.webp') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	height: 500px;
+}
+
+.no-js .bg-1 {
+	background: url('../img/ribbon-help-home-office-sm.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	height: 500px;
+}
+
   
 .bg-2 {
-	background: url('../img/bg-5-sm.jpg') no-repeat top center;
+	background: url('../img/ribbon-clients-pa-services-sm.jpg') no-repeat top center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
     height: 240px;
 }
+.no-webp .bg-2 {
+	background: url('../img/ribbon-clients-pa-services-sm.jpg') no-repeat center center fixed;
+	height: 240px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+.webp .bg-2{
+	background: url('../img/ribbon-clients-pa-services-sm.webp') no-repeat center center fixed;
+	height: 240px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+.no-js .bg-2 {
+	background: url('../img/ribbon-clients-pa-services-sm.jpg') no-repeat center center fixed;
+	height: 240px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
 
 .bg-3 {
-	background: url('../img/bg-2-sm.jpg') no-repeat top center;
+	background: url('../img/ribbon-lifestyle-management-sm.jpg') no-repeat top center;
     height: 240px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+.no-webp .bg-3 {
+	background: url('../img/ribbon-lifestyle-management-sm.jpg') no-repeat center center fixed;
+	height: 240px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+.webp .bg-3{
+	background: url('../img/ribbon-lifestyle-management-sm.webp') no-repeat center center fixed;
+	height: 240px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+.no-js .bg-3 {
+	background: url('../img/ribbon-lifestyle-management-sm.jpg') no-repeat center center fixed;
+	height: 240px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -234,17 +314,70 @@ header, section {
 }
 
 .bg-4 {
-	background: url('../img/bg-1-sm.jpg') no-repeat top center;
+	background: url('../img/ribbon-story-about-sm.jpg') no-repeat top center;
     height: 240px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
 }
+.no-webp .bg-4 {
+	background: url('../img/ribbon-story-about-sm.jpg') no-repeat center center fixed;
+	height: 240px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+.webp .bg-4{
+	background: url('../img/ribbon-story-about-sm.webp') no-repeat center center fixed;
+	height: 240px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+.no-js .bg-4 {
+	background: url('../img/ribbon-story-about-sm.jpg') no-repeat center center fixed;
+	height: 240px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
 
 .bg-5 {
-	background: url('../img/bg-3-sm.jpg') no-repeat top center;
+	background: url('../img/ribbon-get-in-touch-sm.jpg') no-repeat top center;
     height: 240px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+.no-webp .bg-5 {
+	background: url('../img/ribbon-get-in-touch-sm.jpg') no-repeat center center fixed;
+	height: 240px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+.webp .bg-5{
+	background: url('../img/ribbon-get-in-touch-sm.webp') no-repeat center center fixed;
+	height: 240px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+.no-js .bg-5 {
+	background: url('../img/ribbon-get-in-touch-sm.jpg') no-repeat center center fixed;
+	height: 240px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -255,47 +388,174 @@ header, section {
 /* This applies from 768px onwards */
 @media (min-width: 768px) {
    .bg-1 {
-	  background: url('../img/bg.jpg') no-repeat center center fixed;
+	  background: url('../img/ribbon-help-home-office.jpg') no-repeat center center fixed;
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  background-size: cover;
 	  -o-background-size: cover;
    }
+   .no-webp .bg-1 {
+	  background: url('../img/ribbon-help-home-office.jpg') no-repeat center center fixed;
+      -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	}
+
+	.webp .bg-1{
+	  background: url('../img/ribbon-help-home-office.webp') no-repeat center center fixed;
+      -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	}
+   
+   .no-js .bg-1 {
+	  background: url('../img/ribbon-help-home-office.jpg') no-repeat center center fixed;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	}
 
    .bg-2 {
-	  background: url('../img/bg-5.jpg') no-repeat top center fixed;
+	  background: url('../img/ribbon-clients-pa-services.jpg') no-repeat top center fixed;
 	  height: 500px;
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  background-size: cover;
 	  -o-background-size: cover;
    }
+   .no-webp .bg-2 {
+	  background: url('../img/ribbon-clients-pa-services.jpg') no-repeat center center fixed;
+	  height: 500px;
+      -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	}
+
+	.webp .bg-2 {
+	  background: url('../img/ribbon-clients-pa-services.webp') no-repeat center center fixed;
+	  height: 500px;
+      -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	}
+   
+   .no-js .bg-2 {
+	  background: url('../img/ribbon-clients-pa-services.jpg') no-repeat center center fixed;
+	  height: 500px;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	}
+
 
    .bg-3 {
-	  background: url('../img/bg-2.jpg') no-repeat bottom center fixed;
+	  background: url('../img/ribbon-lifestyle-management.jpg') no-repeat bottom center fixed;
 	  height: 500px;
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  background-size: cover;
 	  -o-background-size: cover;
    }
+   .no-webp .bg-3 {
+	  background: url('../img/ribbon-lifestyle-management.jpg') no-repeat center center fixed;
+	  height: 500px;
+      -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	}
+
+	.webp .bg-3 {
+	  background: url('../img/ribbon-lifestyle-management.webp') no-repeat center center fixed;
+	  height: 500px;
+      -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	}
+   
+   .no-js .bg-3 {
+	  background: url('../img/ribbon-lifestyle-management.jpg') no-repeat center center fixed;
+	  height: 500px;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	}
   
    .bg-4 {
-	  background: url('../img/bg-1.jpg') no-repeat bottom center fixed;
+	  background: url('../img/ribbon-story-about.jpg') no-repeat bottom center fixed;
 	  height: 500px;
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  background-size: cover;
 	  -o-background-size: cover;
    }
+   .no-webp .bg-4 {
+	  background: url('../img/ribbon-story-about.jpg') no-repeat center center fixed;
+	  height: 500px;
+      -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	}
+
+	.webp .bg-4 {
+	  background: url('../img/ribbon-story-about.webp') no-repeat center center fixed;
+	  height: 500px;
+      -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	}
+   
+   .no-js .bg-4 {
+	  background: url('../img/ribbon-story-about.jpg') no-repeat center center fixed;
+	  height: 500px;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	}
    .bg-5 {
-	  background: url('../img/bg-3.jpg') no-repeat bottom center fixed;
+	  background: url('../img/ribbon-get-in-touch.jpg') no-repeat bottom center fixed;
 	  height: 500px;
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  background-size: cover;
 	  -o-background-size: cover;
    }
+   .no-webp .bg-5 {
+	  background: url('../img/ribbon-get-in-touch.jpg') no-repeat center center fixed;
+	  height: 500px;
+      -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	}
+
+	.webp .bg-5 {
+	  background: url('../img/ribbon-get-in-touch.webp') no-repeat center center fixed;
+      -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	}
+   
+   .no-js .bg-5 {
+	  background: url('../img/ribbon-get-in-touch.jpg') no-repeat center center fixed;
+	  height: 500px;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	}
  
 }
 
@@ -304,23 +564,144 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) {
 
 	.bg-1 {
-	  background: url('../img/bg.jpg') no-repeat top center;
+	  background: url('../img/ribbon-help-home-office.jpg') no-repeat top center;
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  background-size: cover;
 	  -o-background-size: cover;
 	}
+   .no-webp .bg-1 {
+	  background: url('../img/ribbon-help-home-office.jpg') no-repeat center center fixed;
+      -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	}
+
+	.webp .bg-1 {
+	  background: url('../img/ribbon-help-home-office.webp') no-repeat center center fixed;
+      -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	}
+   
+   .no-js .bg-1 {
+	  background: url('../img/ribbon-help-home-office.jpg') no-repeat center center fixed;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	}
+
 	.bg-2 {
-	background: url('../img/bg-5.jpg') no-repeat top center;
+	background: url('../img/ribbon-clients-pa-services.jpg') no-repeat top center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
     height: 480px;
 	}
+   .no-webp .bg-2 {
+	  background: url('../img/ribbon-clients-pa-services.jpg') no-repeat center center fixed;
+      -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	  height: 480px;
+	}
+
+	.webp .bg-2 {
+	  background: url('../img/ribbon-clients-pa-services.webp') no-repeat center center fixed;
+      -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	  height: 480px;
+	}
+   
+   .no-js .bg-2 {
+	  background: url('../img/ribbon-clients-pa-services.jpg') no-repeat center center fixed;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	  height: 480px;
+	}
+
 
    .bg-3 {
-	   background: url('../img/bg-2.jpg') no-repeat center center;
+	   background: url('../img/ribbon-lifestyle-management.jpg') no-repeat center center;
+	   -webkit-background-size: cover;
+	   -moz-background-size: cover;
+	   background-size: cover;
+	   -o-background-size: cover;
+	   height: 480px;
+   }
+   .no-webp .bg-3 {
+	  background: url('../img/ribbon-lifestyle-management.jpg') no-repeat center center fixed;
+      -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	  height: 480px;
+	}
+
+	.webp .bg-2 {
+	  background: url('../img/ribbon-lifestyle-management.webp') no-repeat center center fixed;
+      -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	  height: 480px;
+	}
+   
+   .no-js .bg-2 {
+	  background: url('../img/ribbon-lifestyle-management.jpg') no-repeat center center fixed;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	  height: 480px;
+	}   
+
+   .bg-4 {
+	   background: url('../img/ribbon-story-about.jpg') no-repeat center center;
+	   -webkit-background-size: cover;
+	   -moz-background-size: cover;
+	   background-size: cover;
+	   -o-background-size: cover;
+	   height: 480px;
+   }
+   
+   .no-webp .bg-4 {
+	  background: url('../img/ribbon-story-about.jpg') no-repeat center center fixed;
+      -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	  height: 480px;
+	}
+
+	.webp .bg-4 {
+	  background: url('../img/ribbon-story-about.webp') no-repeat center center fixed;
+      -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	  height: 480px;
+	}
+   
+   .no-js .bg-4 {
+	  background: url('../img/ribbon-story-about.jpg') no-repeat center center fixed;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	  height: 480px;
+	} 
+    .bg-5 {
+	   background: url('../img/ribbon-get-in-touch.jpg') no-repeat center center;
 	   -webkit-background-size: cover;
 	   -moz-background-size: cover;
 	   background-size: cover;
@@ -328,22 +709,32 @@ and (max-device-width : 1024px) {
 	   height: 480px;
    }
 
-   .bg-4 {
-	   background: url('../img/bg-1.jpg') no-repeat center center;
-	   -webkit-background-size: cover;
-	   -moz-background-size: cover;
-	   background-size: cover;
-	   -o-background-size: cover;
-	   height: 480px;
-   }
-    .bg-5 {
-	   background: url('../img/bg-3.jpg') no-repeat center center;
-	   -webkit-background-size: cover;
-	   -moz-background-size: cover;
-	   background-size: cover;
-	   -o-background-size: cover;
-	   height: 480px;
-   }
+   .no-webp .bg-5 {
+	  background: url('../img/ribbon-get-in-touch.jpg') no-repeat center center fixed;
+      -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	  height: 480px;
+	}
+
+	.webp .bg-5 {
+	  background: url('../img/ribbon-get-in-touch.webp') no-repeat center center fixed;
+      -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	  height: 480px;
+	}
+   
+   .no-js .bg-5 {
+	  background: url('../img/ribbon-get-in-touch.jpg') no-repeat center center fixed;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	  height: 480px;
+	} 
 }
 
 .section-title {
@@ -352,7 +743,7 @@ and (max-device-width : 1024px) {
 
 .section-title h2{
 	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 3.4em;
+	font-size: 3em;
     font-weight: 300;
     /* text-align: left; */
     line-height: 52px;
@@ -381,7 +772,7 @@ and (max-device-width : 1024px) {
 h4{
 	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: 600;
-	font-size:17px;
+	font-size:20px;
 }
 
 /* Header */
@@ -690,7 +1081,6 @@ margin-right: -10px;
 
 #quote-carousel p {
   font-style:italic;
-  font-size:16px;
   text-align:center;
 }
 
@@ -795,20 +1185,13 @@ span.text-muted.copyright {
     display:block;
 }
 
-@media (min-width: 768px) {
-  .section-title h2{
-	 font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	 font-size: 3em;
-	 font-weight: 300;
-  }
-}
-
 @media(max-width: 480px) {
-  .section-title h2{
-	 font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	 font-size: 3em;
-	 font-weight: 300;
-  }
+   .section-title h2{
+	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1.8em;
+	font-weight: 300;
+	line-height: 1.2em;
+   }
   .carousel-indicators,
   .carousel-indicators li {
     cursor: default;

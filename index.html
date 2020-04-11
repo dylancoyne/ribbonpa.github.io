@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="no-js">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Lifestyle management and PA services, based in Sussex UK. Proactive, professional support. Ribbon PA can tie everything together for you.">
+    <meta name="keywords" content="Lifestyle management, lifestyle pa, PA services, professional support, lifestyle manager, problem solver">
+    <meta name="author" content="Victoria Coyne">
 
-    <title>Ribbon - Lifestyle management and PA services </title>
+    <title>Ribbon - Lifestyle management and PA services UK</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
+	<link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/main.css" rel="stylesheet">
     <!--[if lt IE 10]>
@@ -22,10 +21,12 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href='https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,600' rel='stylesheet' type='text/css'>
-	<script src="https://use.typekit.net/gct8sam.js"></script>
+	<script>document.documentElement.classList.remove("no-js");</script>
+	<script defer src="https://use.typekit.net/gct8sam.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<script src="js/modernizr-custom.js"></script>
 	
-	<link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="img/icons/favicon.ico?v=2" type="image/x-icon">
 	<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
 	
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -35,7 +36,6 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-
 <body>
     <!-- Navigation -->
    
@@ -61,11 +61,16 @@
             </li>
         </ul>
     </nav>
-   
     <!--parallax 1 -->
 <header id="top" class="bg-1">
      <div class="brand-header text-center">
-            <img src="img/ribbon_logo.png" alt="Ribbon" width="160" height="120">
+			<picture>
+				<source srcset="img/ribbon-logo.webp" type="image/webp">
+				<source srcset="img/ribbon-logo.png" type="image/png"> 
+				<img src="img/ribbon-logo.png" alt="Ribbon PA logo" width="160" height="120">
+			</picture>
+            
+           
             <h1>Lifestyle management and PA services</h1>
         </div>
         <div class="brand-footer text-center">
@@ -307,7 +312,12 @@
 			<div class="row">
 				<div class="col-lg-3 col-lg-offset-2">
 					<div class="text-panel">
-						<img class="img-responsive" src="img/victoria.png" alt="Victoria Coyne">
+						<picture>
+							<source srcset="img/victoria-coyne.webp" type="image/webp">
+							<source srcset="img/victoria-coyne.png" type="image/png"> 
+							<img class="img-responsive" src="img/victoria-coyne.png" alt="Victoria Coyne">
+						</picture>
+						
 					</div>
 				</div>
 				<div class="col-lg-5">
@@ -353,7 +363,7 @@
             	</div>
             </div>             
              <div class="row">  
-               <div class="col-lg-4 text-center">
+               <div class="col-lg-3 col-lg-offset-3 text-center">
                <div class="text-panel">
 				  <div class="contact-icon" style="font-size: 32px;">
 				  		<i class="fa fa-mobile-phone"></i>
@@ -365,7 +375,7 @@
 				  </div> 
 				  </div>
 			</div>
-			 <div class="col-lg-4 text-center">
+			 <div class="col-lg-3 text-center">
 			 	<div class="text-panel">
                     <div class="contact-icon">
 				  		<i class="fa fa-envelope"></i>
@@ -377,18 +387,7 @@
 				  </div> 
 			</div>
 			</div>
-			 <div class="col-lg-4 text-center">
-			 <div class="text-panel">
-                    <div class="contact-icon">
-				  		<i class="fa fa-linkedin"></i>
-				  </div>
-				  <div class="contact-text">
-						Connect
-						<br>
-						<a href="http://linked.in/ribbonpa/">linked.in/ribbonpa/</a>
-				  </div> 
-				  </div>
-			</div>
+			 
 			</div>
 </div>
 <!--/container-->
@@ -398,9 +397,15 @@
  		<div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <span class="logo-sml"><img src="img/ribbon_logo_sml.png" alt="Ribbon" width="80" height="60"></span>
+                    <span class="logo-sml">
+						<picture>
+							<source srcset="img/ribbon-logo-sml.webp" type="image/webp">
+							<source srcset="img/ribbon-logo-sml.png" type="image/png"> 
+							<img src="img/ribbon-logo-sml.png" alt="Ribbon PA services" width="80" height="60">
+						</picture>
+                    </span>
                     <span class="text-muted copyright">Copyright ©ribbon.</span>
-                    <span class="text-muted">Ribbon Consulting Ltd trading as ribbon</span>
+                    <span class="text-muted"><a href="http://ribbonconsulting.co.uk" title="Ribbon Consulting Ltd">Ribbon Consulting Ltd</a> trading as ribbon pa</span>
                     <span class="text-muted">VAT number 284570577</span>
                 </div>
             </div>
@@ -411,8 +416,7 @@
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <!-- Bootstrap Core JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <script> 
+<script> 
 /**
  * Author: Heather Corey
  * jQuery Simple Parallax Plugin

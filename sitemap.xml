@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://ribbonpa.co.uk</loc>
+    <image:image>
+      <image:loc>https://ribbonpa.co.uk/img/ribbon-help-home-office-sm.jpg</image:loc>
+      <image:title>How can Ribbon help?</image:title>
+      <image:caption>Whether you’re running your own business, need help managing a household project or just want to tick off some of the tasks on your ever growing personal admin list, there are times when everyone needs an extra pair of hands.</image:caption>
+    </image:image>
+	<image:image>
+	 <image:loc>https://ribbonpa.co.uk/img/ribbon-clients-pa-services.jpg</image:loc>
+	 <image:title>What our clients say</image:title>
+	 <image:caption>Ribbon has absolutely transformed our chaotic household by taking a diverse range of tasks off our hands.</image:caption>
+	</image:image>
+	<image:image>
+	 <image:loc>https://ribbonpa.co.uk/img/ribbon-lifestyle-management.jpg</image:loc>
+	 <image:title>What does Ribbon do?</image:title>
+	 <image:caption>Lifestyle Management, Travel Co-ordination, Event Management, Business PA, Property Management, Concierge Services</image:caption>
+	</image:image>
+	<image:image>
+	 <image:loc>https://ribbonpa.co.uk/img/ribbon-story-about.jpg</image:loc>
+	 <image:title>The Ribbon Story</image:title>
+	 <image:caption>As the founder of Ribbon, I was born to organise and I have always been passionate about bringing order to the chaos of life.</image:caption>
+	</image:image>
+	<image:image>
+	 <image:loc>https://ribbonpa.co.uk/img/ribbon-get-in-touch.jpg</image:loc>
+	 <image:title>Get in touch</image:title>
+	 <image:caption>Based in West Sussex, Ribbon works with clients in the South East and beyond. Call or email to find out how Ribbon can tie everything together.</image:caption>
+	</image:image>
+  </url> 
+</urlset>
