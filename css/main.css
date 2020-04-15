@@ -216,6 +216,7 @@ header, section {
 		background-size: cover;
 		-o-background-size: cover;
 		height: 500px;
+		width:100%;
 	}
 	.no-webp .bg-1 {
 		background: url('../img/ribbon-help-home-office-sm.jpg') no-repeat center center fixed;
@@ -224,6 +225,7 @@ header, section {
 		background-size: cover;
 		-o-background-size: cover;
 		height: 500px;
+		width:100%;
 	}
 
 	.webp .bg-1{
@@ -233,6 +235,7 @@ header, section {
 		background-size: cover;
 		-o-background-size: cover;
 		height: 500px;
+		width:100%;
 	}
 
 	.no-js .bg-1 {
