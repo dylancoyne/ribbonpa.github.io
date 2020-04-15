@@ -361,7 +361,7 @@ header, section {
 		-o-background-size: cover;
 	}
 	.no-webp .bg-5 {
-		background: url('../img/ribbon-get-in-touch-sm.jpg') no-repeat center center fixed;
+		background: url('../img/ribbon-get-in-touch-sm.jpg') no-repeat center center;
 		height: 240px;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
