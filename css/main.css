@@ -205,183 +205,187 @@ header, section {
 
 /* Background Images */
 
-/* This applies from 0px to 768px */
-.bg-1 {
-	background: url('../img/ribbon-help-home-office-sm.jpg') no-repeat top center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-	height: 500px;
-}
-.no-webp .bg-1 {
-	background: url('../img/ribbon-help-home-office-sm.jpg') no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-	height: 500px;
-}
+/* Portrait phones and smaller */
+@media(max-width:480px) {
 
-.webp .bg-1{
-	background: url('../img/ribbon-help-home-office-sm.webp') no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-	height: 500px;
-}
+	/* This applies from 0px to 768px */
+	.bg-1 {
+		background: url('../img/ribbon-help-home-office-sm.jpg') no-repeat top center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+		height: 500px;
+	}
+	.no-webp .bg-1 {
+		background: url('../img/ribbon-help-home-office-sm.jpg') no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+		height: 500px;
+	}
 
-.no-js .bg-1 {
-	background: url('../img/ribbon-help-home-office-sm.jpg') no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-	height: 500px;
-}
+	.webp .bg-1{
+		background: url('../img/ribbon-help-home-office-sm.webp') no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+		height: 500px;
+	}
+
+	.no-js .bg-1 {
+		background: url('../img/ribbon-help-home-office-sm.jpg') no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+		height: 500px;
+	}
 
   
-.bg-2 {
-	background: url('../img/ribbon-clients-pa-services-sm.jpg') no-repeat top center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-    height: 240px;
-}
-.no-webp .bg-2 {
-	background: url('../img/ribbon-clients-pa-services-sm.jpg') no-repeat center center fixed;
-	height: 240px;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-}
+	.bg-2 {
+		background: url('../img/ribbon-clients-pa-services-sm.jpg') no-repeat top center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+		height: 240px;
+	}
+	.no-webp .bg-2 {
+		background: url('../img/ribbon-clients-pa-services-sm.jpg') no-repeat center center fixed;
+		height: 240px;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+	}
 
-.webp .bg-2{
-	background: url('../img/ribbon-clients-pa-services-sm.webp') no-repeat center center fixed;
-	height: 240px;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-}
+	.webp .bg-2{
+		background: url('../img/ribbon-clients-pa-services-sm.webp') no-repeat center center fixed;
+		height: 240px;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+	}
 
-.no-js .bg-2 {
-	background: url('../img/ribbon-clients-pa-services-sm.jpg') no-repeat center center fixed;
-	height: 240px;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-}
-
-
-.bg-3 {
-	background: url('../img/ribbon-lifestyle-management-sm.jpg') no-repeat top center;
-    height: 240px;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-}
-.no-webp .bg-3 {
-	background: url('../img/ribbon-lifestyle-management-sm.jpg') no-repeat center center fixed;
-	height: 240px;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-}
-
-.webp .bg-3{
-	background: url('../img/ribbon-lifestyle-management-sm.webp') no-repeat center center fixed;
-	height: 240px;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-}
-
-.no-js .bg-3 {
-	background: url('../img/ribbon-lifestyle-management-sm.jpg') no-repeat center center fixed;
-	height: 240px;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-}
-
-.bg-4 {
-	background: url('../img/ribbon-story-about-sm.jpg') no-repeat top center;
-    height: 240px;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-}
-.no-webp .bg-4 {
-	background: url('../img/ribbon-story-about-sm.jpg') no-repeat center center fixed;
-	height: 240px;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-}
-
-.webp .bg-4{
-	background: url('../img/ribbon-story-about-sm.webp') no-repeat center center fixed;
-	height: 240px;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-}
-
-.no-js .bg-4 {
-	background: url('../img/ribbon-story-about-sm.jpg') no-repeat center center fixed;
-	height: 240px;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-}
+	.no-js .bg-2 {
+		background: url('../img/ribbon-clients-pa-services-sm.jpg') no-repeat center center fixed;
+		height: 240px;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+	}
 
 
-.bg-5 {
-	background: url('../img/ribbon-get-in-touch-sm.jpg') no-repeat top center;
-    height: 240px;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-}
-.no-webp .bg-5 {
-	background: url('../img/ribbon-get-in-touch-sm.jpg') no-repeat center center fixed;
-	height: 240px;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-}
+	.bg-3 {
+		background: url('../img/ribbon-lifestyle-management-sm.jpg') no-repeat top center;
+		height: 240px;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+	}
+	.no-webp .bg-3 {
+		background: url('../img/ribbon-lifestyle-management-sm.jpg') no-repeat center center fixed;
+		height: 240px;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+	}
 
-.webp .bg-5{
-	background: url('../img/ribbon-get-in-touch-sm.webp') no-repeat center center fixed;
-	height: 240px;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-}
+	.webp .bg-3{
+		background: url('../img/ribbon-lifestyle-management-sm.webp') no-repeat center center fixed;
+		height: 240px;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+	}
 
-.no-js .bg-5 {
-	background: url('../img/ribbon-get-in-touch-sm.jpg') no-repeat center center fixed;
-	height: 240px;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
+	.no-js .bg-3 {
+		background: url('../img/ribbon-lifestyle-management-sm.jpg') no-repeat center center fixed;
+		height: 240px;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+	}
+
+	.bg-4 {
+		background: url('../img/ribbon-story-about-sm.jpg') no-repeat top center;
+		height: 240px;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+	}
+	.no-webp .bg-4 {
+		background: url('../img/ribbon-story-about-sm.jpg') no-repeat center center fixed;
+		height: 240px;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+	}
+
+	.webp .bg-4{
+		background: url('../img/ribbon-story-about-sm.webp') no-repeat center center fixed;
+		height: 240px;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+	}
+
+	.no-js .bg-4 {
+		background: url('../img/ribbon-story-about-sm.jpg') no-repeat center center fixed;
+		height: 240px;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+	}
+
+
+	.bg-5 {
+		background: url('../img/ribbon-get-in-touch-sm.jpg') no-repeat top center;
+		height: 240px;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+	}
+	.no-webp .bg-5 {
+		background: url('../img/ribbon-get-in-touch-sm.jpg') no-repeat center center fixed;
+		height: 240px;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+	}
+
+	.webp .bg-5{
+		background: url('../img/ribbon-get-in-touch-sm.webp') no-repeat center center fixed;
+		height: 240px;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+	}
+
+	.no-js .bg-5 {
+		background: url('../img/ribbon-get-in-touch-sm.jpg') no-repeat center center fixed;
+		height: 240px;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+	}
 }
 
 
