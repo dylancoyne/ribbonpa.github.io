@@ -1168,8 +1168,17 @@ a[href^="tel:"]:before {
 /* Footer */
 
 span.text-muted.copyright {
-	padding-bottom: 12px;
+	padding-bottom: 3rem;
 }
+
+span.logo-sml {
+padding-top: 3rem;
+}
+
+span.text-muted.links {
+	font-size: 14px;
+}
+
 
 .text-muted {
 	color: #999;
