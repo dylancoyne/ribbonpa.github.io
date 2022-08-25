@@ -34,7 +34,7 @@ p {
 	font-family:adelle;
 	font-style: normal;
 	font-variant: normal;
-	line-height: 2.2em;
+	line-height: 2em;
     text-align: justify;
 }
 
@@ -777,6 +777,7 @@ and (max-device-width : 1024px) {
 h4{
 	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: 600;
+	margin-bottom: 24px;
 }
 
 /* Header */
