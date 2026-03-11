@@ -755,7 +755,7 @@ and (max-device-width : 1024px) {
 }
 
 .text-panel {
-    margin-bottom: 26px;
+    margin:0 0 56px;
 }
 
 .text-panel img {
