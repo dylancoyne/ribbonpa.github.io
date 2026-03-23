@@ -16,7 +16,7 @@ body {
     font-family: "adelle",serif;
     color: #0d0404;
     background-color:#f7f7f7;
-    font-size:20px;
+    font-size:2em;
 }
 
 h1, h2, h3, p {
@@ -1200,7 +1200,11 @@ span.text-muted.links {
 }
 
 @media(max-width: 480px) {
-   .section-title h2{
+	.divider {
+		height: 24px;
+		}
+	
+	.section-title h2{
 	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 1.8em;
 	font-weight: 300;
@@ -1226,9 +1230,10 @@ span.text-muted.links {
   margin-right: 0px;
   }
   #quote-carousel p {
-  	 font-style:italic;
-  	 font-size:14px;
-  	 text-align:center;
+	font-style: italic;
+	font-size: 16px;
+	text-align: center;
+	margin-bottom: 12px;
   }
   #quote-carousel .carousel-indicators li{
 	display: inline-block;
@@ -1242,6 +1247,15 @@ span.text-muted.links {
     width:12px;
     margin-bottom:1px;
   }
+
+  blockquote {
+	font-style: normal;
+	font-variant: normal;
+	font-size: 1.4em;
+	font-weight: 300;
+	line-height: 1.4em;
+	padding: 32px 64px;
+}
  
   .img-responsive {
     display: block;
