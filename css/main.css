@@ -16,7 +16,7 @@ body {
     font-family: "adelle",serif;
     color: #0d0404;
     background-color:#f7f7f7;
-    font-size:18px;
+    font-size:20px;
 }
 
 h1, h2, h3, p {
@@ -40,12 +40,13 @@ p {
 
 blockquote {
 	font-style: normal;
-    font-variant: normal;
-	font-size: 24px;
-    font-weight: 300;
-    line-height: 38px;
-    padding: 32px 38px;
+	font-variant: normal;
+	font-size: 32px;
+	font-weight: 300;
+	line-height: 48px;
+	padding: 32px 64px;
 }
+
 pre {
 	font-size: 13px;
 	font-style: normal;
@@ -1085,8 +1086,11 @@ margin-right: -10px;
 }
 
 #quote-carousel p {
-  font-style:italic;
-  text-align:center;
+	font-style: italic;
+	text-align: center;
+	line-height: 1.8em;
+	font-size: 24px;
+	margin-bottom: 20px;
 }
 
 #quote-carousel strong {
