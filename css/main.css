@@ -16,7 +16,7 @@ body {
     font-family: "adelle",serif;
     color: #0d0404;
     background-color:#f7f7f7;
-    font-size:2em;
+    font-size:1.6em;
 }
 
 h1, h2, h3, p {
@@ -41,7 +41,7 @@ p {
 blockquote {
 	font-style: normal;
 	font-variant: normal;
-	font-size: 32px;
+	font-size: 1.6em;
 	font-weight: 300;
 	line-height: 48px;
 	padding: 32px 64px;
@@ -1089,7 +1089,7 @@ margin-right: -10px;
 	font-style: italic;
 	text-align: center;
 	line-height: 1.8em;
-	font-size: 24px;
+	font-size: 1.2em;
 	margin-bottom: 20px;
 }
 
@@ -1210,6 +1210,10 @@ span.text-muted.links {
 	font-weight: 300;
 	line-height: 1.2em;
    }
+
+   .section-title {
+	margin: 32px 0 24px;
+}
   .carousel-indicators,
   .carousel-indicators li {
     cursor: default;
@@ -1231,7 +1235,7 @@ span.text-muted.links {
   }
   #quote-carousel p {
 	font-style: italic;
-	font-size: 16px;
+	font-size: 1em;
 	text-align: center;
 	margin-bottom: 12px;
   }
@@ -1251,7 +1255,7 @@ span.text-muted.links {
   blockquote {
 	font-style: normal;
 	font-variant: normal;
-	font-size: 1.4em;
+	font-size: 1.2em;
 	font-weight: 300;
 	line-height: 1.4em;
 	padding: 32px 64px;
